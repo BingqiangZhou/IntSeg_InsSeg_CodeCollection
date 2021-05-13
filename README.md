@@ -9,7 +9,7 @@
 - net.py：预测推理，包含图像预处理（normalize等）、后处理（二值化等）。
 - test.py：在Pascal VOC 2012数据集上，做测试得到分割结果（mask）
 
-## 交互式图像分割
+## [交互式图像分割](./InteractiveImageSegmentation)
 
 ### 相关综述
 
@@ -23,7 +23,7 @@
 
 待更新......
 
-## 图像实例分割
+## [图像实例分割](./ImageInstanceSegmentation)
 
 ### 相关综述
 
