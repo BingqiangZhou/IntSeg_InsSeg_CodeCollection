@@ -14,82 +14,63 @@
 
 这里主要按年份分类：
 
-### 基于RNN的方法
+* [2018](#2018)
+* [2019](#2019)
+* [2020](#2020)
+* [2021](#2021)
 
-✅ **Recurrent Neural Networks for Semantic Instance Segmentation -arxiv2017**
+### 2017
 
-- [源Github - https://github.com/imatge-upc/rsis](https://github.com/imatge-upc/rsis)
-- [Paper PDF - https://arxiv.org/pdf/1712.00617](https://arxiv.org/pdf/1712.00617)
-- 支持VOC、Cityscapes 、CVPPP数据集，提供有模型
-- Release地址（待发布）
-- 实现过程以及记录（待更新）
+Deep extreme cut: From extreme points to object segmentation
+https://github.com/scaelles/DEXTR-PyTorch/
+http://www.vision.ee.ethz.ch/～cvlsegmentation/dextr/
 
-⏹ **End-to-End Instance Segmentation with Recurrent Attention -CVPR2017**
+### 2018
 
-* [源Github - https://github.com/renmengye/rec-attend-public](https://github.com/renmengye/rec-attend-public)
-* [Paper PDF - https://arxiv.org/pdf/1605.09410](https://arxiv.org/pdf/1605.09410)
-* 支持Cityscapes 、KITTI 、CVPPP、COCO数据集，未给出模型文件
+(1 把加载数据集数据部分写进了计算图，战略性放弃)
+Iteratively trained interactive segmentation
+https://github.com/sabarim/itis
 
-❌ **Recurrent Instance Segmentation - ECCV2016**
+(2 完成)
+Interactive image segmentation with latent diversity
+https://github.com/intel-isl/Intseg
 
-* [源Github - https://github.com/bernard24/RIS](https://github.com/bernard24/RIS)
-* [Paper PDF - https://www.robots.ox.ac.uk/~tvg/publications/2016/RIS7.pdf](https://www.robots.ox.ac.uk/~tvg/publications/2016/RIS7.pdf)
-* 支持VOC、COCO数据集，有模型，但是Torch(不是Pytorch)的代码(LUA语言)，并且模型文件为`.model`后缀，无法用Pytorch、OpenCV直接加载，这里我放弃了
+(3 未给出模型文件)
+SeedNet: Automatic seed generation with deep reinforcement learning for robust interactive segmentation.
+https://github.com/kelawaad/SeedNet
 
-🔶 RVOS: End-to-End Recurrent Net for Video Object Segmentation -CVPR2019
+(4 完成，caffe python源码，有模型，使用opencv dnn模块加载caffe模型进行推理，重新编译opencv，使用CUDA加速)
+A fully convolutional two-stream fusion network for interactive image segmentation
+https://github.com/cyh4/FCTSFN
 
-* [源Github - https://github.com/imatge-upc/rvos](https://github.com/imatge-upc/rvos)
-* [Paper PDF - https://arxiv.org/pdf/1903.05612](https://arxiv.org/pdf/1903.05612)
-* 基于RNN的方法，扩展到这篇视频多目标分割论文
+### 2019
 
-### 基于Embedding的方法
+(5 完成，caffe python源码，有模型，使用opencv dnn模块加载caffe模型进行推理，重新编译opencv，使用CUDA加速)
+Interactive image segmentation via backpropagating refinement scheme
+https://github.com/wdjang/BRS-Interactive_segmentation
 
-1. Semantic Instance Segmentation with a Discriminative Loss Function -CVPR2017
-   （CVPPP数据集，未给出模型文件）
-   https://github.com/Wizaron/instance-segmentation-pytorch
-   (instance-segmentation-pytorch-master.zip)
-2. Semantic Instance Segmentation via Deep Metric Learning -2017
-   （COCO、VOC数据集，未给出模型文件）
-   https://github.com/alicranck/instance-seg (instance-seg-master.zip)
-3. EmbedMask: Embedding Coupling for One-stage Instance Segmentation -CVPR2019
-   （未完成，COCO数据集，有模型，EmbedMask依赖的FCOS编译出错，环境可能需要设置为install.md中的一样）
-   https://github.com/yinghdb/EmbedMask (EmbedMask-master.zip)
-4. Instance segmentation by jointly optimizing spatial embeddings and clustering bandwidth -CVPR2019
-   （Cityscapes数据集，有模型）
-   https://github.com/davyneven/SpatialEmbeddings (SpatialEmbeddings-master.zip)
-5. Recurrent Pixel Embedding for Instance Grouping -CVPR2018
-   （完成，COCO、VOC数据集，有模型，matlab代码得到的embedding特征图，python读取embedding，聚类，匈牙利匹配得到mask）
-   https://github.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping (matlab)
-   (Recurrent-Pixel-Embedding-for-Instance-Grouping-master.zip)
+### 2020
 
-### 基于Detection的方法
+(6 未完成)
+F-BRS: Rethinking backpropagating refinement for interactive segmentation
+https://github.com/saic-vul/fbrs_interactive_segmentation
+https://github.com/jpconnel/fbrs-segmentation
 
-1. Mask R-CNN (代码版本众多) -CVPR2017
-   （待完成，使用pytorcn中Mask R-CNN模型）
-   https://github.com/facebookresearch/maskrcnn-benchmark
-   https://github.com/multimodallearning/pytorch-mask-rcnn
-   https://github.com/matterport/Mask_RCNN
-   https://github.com/bleakie/MaskRCNN
-   https://github.com/fizyr/keras-maskrcnn
-2. RefineMask: Towards High-Quality Instance Segmentation with Fine-Grained Features -CVPR 2021
-   （完成）
-   https://github.com/zhanggang001/RefineMask  (RefineMask-main.zip)
-3. Weakly-supervised Instance Segmentation via Class-agnostic Learning with Salient Images -CVPR2021(这篇引入了显著图)
-   （跳过这一篇，这一篇是通过用粗糙的数据集（包括box以及显著性图），通过学习得到进度比较高的mask，然后用于训练mask-r-cnn）
-   https://github.com/vealocia/BoxCaseg (BoxCaseg-main.zip)
-4. D2Det: Towards High Quality Object Detection and Instance Segmentation -CVPR2020
-   （完成）
-   https://github.com/JialeCao001/D2Det-mmdet2.1
-   https://github.com/JialeCao001/D2Det (D2Det-master.zip)
-5. CenterMask : Real-Time Anchor-Free Instance Segmentation -CVPR2020
-   （完成）
-   https://github.com/youngwanLEE/CenterMask (CenterMask-master.zip)
+(7 主要处理遥感图像)
+DISIR: Deep image segmentation with interactive refinement
+https://github.com/delair-ai/DISIR
 
-### 其他方法
+(8 完成)
+Getting to 99% accuracy in interactive segmentation
+https://github.com/MarcoForte/DeepInteractiveSegmentation
 
-1. Zero-Shot Instance Segmentation  -CVPR2021
-   https://github.com/zhengye1995/Zero-shot-Instance-Segmentation (Zero-shot-Instance-Segmentation-main.zip)
-2. Weakly Supervised Instance Segmentation using Class Peak Response - CVPR2018
-   https://github.com/ZhouYanzhao/PRM/tree/pytorch （PRM-master.zip）
-3. Object Counting and Instance Segmentation with Image-level Supervision -CVPR2019
-   https://github.com/GuoleiSun/CountSeg (CountSeg-master.zip)
+(9 未完成)
+Interactive Object Segmentation with Inside-Outside Guidance
+https://github.com/shiyinzhang/Inside-Outside-Guidance
+
+### 2021
+
+(10 未完成)
+
+Reviving Iterative Training with Mask Guidance for Interactive Segmentation
+https://github.com/saic-vul/ritm_interactive_segmentation
