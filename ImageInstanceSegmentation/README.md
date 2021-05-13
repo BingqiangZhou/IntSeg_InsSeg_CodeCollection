@@ -96,6 +96,8 @@
   [https://github.com/bleakie/MaskRCNN](https://github.com/bleakie/MaskRCNN)
   [https://github.com/fizyr/keras-maskrcnn](https://github.com/fizyr/keras-maskrcnn)
 * 这里直接通过使用torchvision包中带有的Mask R-CNN([参考文档](https://pytorch.org/vision/stable/models.html#mask-r-cnn))来实现推理预测过程。
+* Release地址（待发布）
+* [跑通过程记录](./MaskRCNN/README.md)
 
 ✅ **RefineMask: Towards High-Quality Instance Segmentation with Fine-Grained Features -CVPR 2021**
 
@@ -103,7 +105,7 @@
 * [Paper PDF - https://arxiv.org/pdf/2104.08569](https://arxiv.org/pdf/2104.08569.pdf)
 * 有提供模型文件
 * Release地址（待发布）
-* 实现过程以及记录（待更新）
+* 实现过程以及记录
 
 ❌ **Weakly-supervised Instance Segmentation via Class-agnostic Learning with Salient Images -CVPR2021**
 

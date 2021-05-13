@@ -15,7 +15,7 @@
 
 **A survey of recent interactive image segmentation methods**, [PDF - springer.com](https://link.springer.com/content/pdf/10.1007/s41095-020-0177-5.pdf)
 
-### 跑通的相关代码
+### 相关代码
 
 xxx库，原地址，本库中地址，release
 
@@ -27,7 +27,7 @@ xxx库，原地址，本库中地址，release
 
 **A Survey on Instance Segmentation: State of the art**, [PDF - arcix.org](https://arxiv.org/pdf/2007.00047)
 
-### 跑通的相关代码
+### 相关代码
 
 xxx库，原地址，本库中地址，release
 
