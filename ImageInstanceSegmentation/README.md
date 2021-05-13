@@ -90,12 +90,12 @@
 
 * [Paper PDF - https://arxiv.org/pdf/1703.06870](https://arxiv.org/pdf/1703.06870)
 * 相关代码有许多，如下：
-  [https://github.com/facebookresearch/maskrcnn-benchmark](https://github.com/facebookresearch/maskrcnn-benchmark)
-  [https://github.com/multimodallearning/pytorch-mask-rcnn](https://github.com/multimodallearning/pytorch-mask-rcnn)
-  [https://github.com/matterport/Mask_RCNN](https://github.com/matterport/Mask_RCNN)
-  [https://github.com/bleakie/MaskRCNN](https://github.com/bleakie/MaskRCNN)
-  [https://github.com/fizyr/keras-maskrcnn](https://github.com/fizyr/keras-maskrcnn)
-* 这里直接通过使用torchvision包中带有的Mask R-CNN([参考文档](https://pytorch.org/vision/stable/models.html#mask-r-cnn))来实现推理预测过程。
+  - [https://github.com/facebookresearch/maskrcnn-benchmark](https://github.com/facebookresearch/maskrcnn-benchmark)
+  - [https://github.com/multimodallearning/pytorch-mask-rcnn](https://github.com/multimodallearning/pytorch-mask-rcnn)
+  - [https://github.com/matterport/Mask_RCNN](https://github.com/matterport/Mask_RCNN)
+  - [https://github.com/bleakie/MaskRCNN](https://github.com/bleakie/MaskRCNN)
+  - [https://github.com/fizyr/keras-maskrcnn](https://github.com/fizyr/keras-maskrcnn)
+* 这里直接通过使用torchvision包中带有的Mask R-CNN([参考文档](https://pytorch.org/vision/stable/models.html#mask-r-cnn))来实现推理预测过程
 * [代码打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/maskrcnn)
 * [跑通过程记录](./MaskRCNN)
 

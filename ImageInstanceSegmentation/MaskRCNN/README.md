@@ -32,6 +32,7 @@ pip install numpy pillow matplotlib pandas tqdm opencv-python scipy openpyxl
 
 将整个Pascal VOC 2012验证集中的图片跑一遍预测，通过真实的mask与预测的mask做最大匹配，得到一一对应的mask，并求出相关的指标，最后保存mask成图像，相关指标数据保存到Excel当中。
 
+---
+
 ## [代码打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/maskrcnn)
 
----
