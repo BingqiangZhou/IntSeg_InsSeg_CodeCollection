@@ -51,11 +51,9 @@ python setup.py build develop
 
 ### 下载模型文件
 
-**需要科学上网** [下载地址：https://github.com/youngwanLEE/CenterMask#models](https://github.com/youngwanLEE/CenterMask#models)，我将`centermask-R-50-FPN-ms-2x.pth`放在了本仓库的[Releaes](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/centermask)中，提供下载。
+**需要科学上网** [源Github库](https://github.com/youngwanLEE/CenterMask)下提供了许多模型的[下载地址](https://github.com/youngwanLEE/CenterMask#models)，我将`centermask-R-50-FPN-ms-2x.pth`放在了本仓库的[Releaes](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/centermask)中，提供下载。
 
-这里以[centermask-R-50-FPN-ms-2x.pth](https://www.dropbox.com/s/bhpf6jud8ovvxmh/centermask-R-50-FPN-ms-2x.pth?dl=1)为例，下载后放到CenterMask\models文件夹中
-
-```
+这里以[centermask-R-50-FPN-ms-2x.pth](https://www.dropbox.com/s/bhpf6jud8ovvxmh/centermask-R-50-FPN-ms-2x.pth?dl=1)为例，下载后放到`CenterMask\models`文件夹中
 
 ### 修改CenterMask源码
 
