@@ -127,8 +127,8 @@
 * [源Github - https://github.com/youngwanLEE/CenterMask](https://github.com/youngwanLEE/CenterMask)
 * [Paper PDF - https://arxiv.org/pdf/1911.06667](https://arxiv.org/pdf/1911.06667)
 * 有提供模型文件
-* Release地址（待发布）
-* 实现过程以及记录（待更新）
+* [代码打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/centermask)
+* [跑通过程记录](./CenterMask)
 
 ### 其他方法
 

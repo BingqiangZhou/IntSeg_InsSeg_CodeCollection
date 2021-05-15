@@ -53,7 +53,7 @@ python setup.py build develop
 
 **需要科学上网** [下载地址：https://github.com/youngwanLEE/CenterMask#models](https://github.com/youngwanLEE/CenterMask#models)，我将`centermask-R-50-FPN-ms-2x.pth`放在了Releaes中。
 
-这里以centermask-R-50-FPN-ms-2x.pth(https://www.dropbox.com/s/bhpf6jud8ovvxmh/centermask-R-50-FPN-ms-2x.pth?dl=1)为例，下载后放到CenterMask\models文件夹中
+这里以[centermask-R-50-FPN-ms-2x.pth](https://www.dropbox.com/s/bhpf6jud8ovvxmh/centermask-R-50-FPN-ms-2x.pth?dl=1)为例，下载后放到CenterMask\models文件夹中
 ```bash
 mkdir models
 cd models
