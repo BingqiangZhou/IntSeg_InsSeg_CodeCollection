@@ -2,6 +2,16 @@
 
 这里记录一下上一个月(202104)跑通的交互式图像分割、图像实例分割的代码的过程。
 
+## 实验环境
+
+windows 10 (20H2)
+
+CUDA 10.2.89，[下载地址](https://developer.nvidia.cn/cuda-toolkit-archive)
+
+cuDNN 7.6.5，[下载地址](https://developer.nvidia.com/rdp/cudnn-archive)
+
+MinGW-W64 GCC-5.4.0，[下载地址](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/)
+
 ## 所做的主要工作
 
 在一些交互式图像分割、图像实例分割工作相关代码（有相应的Github库）的基础上，写出一个推理的类（net.py），然后再Pascal VOC 2012数据集（[官方地址 host.robots.ox.ac.uk](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/)、[Pascal VOC Dataset Mirror (pjreddie.com)包含测试集](https://pjreddie.com/projects/pascal-voc-dataset-mirror/))上，测试（test.py）得到分割结果（mask）。
@@ -37,10 +47,4 @@
 | MaskRCNN | [torchvision](https://pytorch.org/vision/stable/models.html#mask-r-cnn) | [ImageInstanceSegmentation/MaskRCNN](./ImageInstanceSegmentation/MaskRCNN) | - |[打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/maskrcnn) |
 | 待更新......| | | | | 
 
-### 实验环境
-
-windows 10 (20H2)
-
-CUDA 10.2.89
-
-cuDNN 7.6.5
+----

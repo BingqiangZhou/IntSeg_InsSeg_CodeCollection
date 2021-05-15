@@ -1,0 +1,5 @@
+*.pth
+
+build/
+*.egg-info/
+dist/
