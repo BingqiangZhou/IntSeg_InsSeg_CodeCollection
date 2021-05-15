@@ -6,7 +6,7 @@
 
 ## 创建环境以及安装相关Python包
 
-**注意：首先得安装好CUDA、cuDNN以及GCC，[下载安装地址](../../README.md#实验环境)**
+**注意：首先得安装好CUDA、cuDNN以及GCC，[下载地址](../../README.md#实验环境)**
 
 ````bash
 
@@ -57,7 +57,7 @@ python setup.py build develop
 
 ### 修改CenterMask源码
 
-1. 为了记录推理的时间，这里修改了[`demo\predictor.py`]()中的[compute_prediction](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/blob/7f614785c5afc42d4570e0d5e2fbbcbc37219e28/ImageInstanceSegmentation/CenterMask/demo/predictor.py#L240)方法，在返回预测结果的同时，返回推理时间。
+1. 为了记录推理的时间，这里修改了`demo\predictor.py`中的[compute_prediction](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/blob/7f614785c5afc42d4570e0d5e2fbbcbc37219e28/ImageInstanceSegmentation/CenterMask/demo/predictor.py#L240)方法，在返回预测结果的同时，返回推理时间。
 
 ### net.py
 
