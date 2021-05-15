@@ -47,27 +47,25 @@ python setup.py build develop
 ````
 
 ## 修改及编写代码
-### [代码打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/maskrcnn)
+### [代码打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/centermask)
 
 ### 下载模型文件
 
-**需要科学上网** [下载地址：https://github.com/youngwanLEE/CenterMask#models](https://github.com/youngwanLEE/CenterMask#models)，我将`centermask-R-50-FPN-ms-2x.pth`放在了Releaes中。
+**需要科学上网** [下载地址：https://github.com/youngwanLEE/CenterMask#models](https://github.com/youngwanLEE/CenterMask#models)，我将`centermask-R-50-FPN-ms-2x.pth`放在了本仓库的[Releaes](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/centermask)中，提供下载。
 
 这里以[centermask-R-50-FPN-ms-2x.pth](https://www.dropbox.com/s/bhpf6jud8ovvxmh/centermask-R-50-FPN-ms-2x.pth?dl=1)为例，下载后放到CenterMask\models文件夹中
-```bash
-mkdir models
-cd models
+
 ```
 
 ### 修改CenterMask源码
 
-1. 为了记录推理的时间，这里修改了[`demo\predictor.py`]()中的`compute_prediction`，在返回预测结果的同时，返回推理时间。
+1. 为了记录推理的时间，这里修改了[`demo\predictor.py`]()中的[compute_prediction](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/blob/7f614785c5afc42d4570e0d5e2fbbcbc37219e28/ImageInstanceSegmentation/CenterMask/demo/predictor.py#L240)方法，在返回预测结果的同时，返回推理时间。
 
 ### net.py
 
 **1. 输入图像预处理**
 
-这里直接输入图片的路径即可，直接调用源代码[`demo\predictor.py`]()中的[compute_prediction]()方法省去了许多麻烦。
+这里直接输入图片的路径即可，直接调用源代码`demo\predictor.py`中的[compute_prediction](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/blob/7f614785c5afc42d4570e0d5e2fbbcbc37219e28/ImageInstanceSegmentation/CenterMask/demo/predictor.py#L240)方法省去了许多麻烦。
 
 **2. 后处理**
 
