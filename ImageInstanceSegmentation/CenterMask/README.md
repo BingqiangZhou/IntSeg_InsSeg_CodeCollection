@@ -18,11 +18,12 @@ cd CenterMask
 conda create -n centermask python=3.7
 conda activate centermask
 
-# this installs the right pip and dependencies for the fresh python (这一步不知道是不是一定需要，但是源代码中的Install.md中有这一步，这里就直接复制过来了)
+# this installs the right pip and dependencies for the fresh python
+# 这一步不知道是不是一定需要，但是源代码中的Install.md中有这一步，这里就直接复制过来执行了
 conda install ipython
 
 # 安装pytorch(1.4.0)、torchvision(0.5.0)包，主要要windows下，得安装这个版本才行，其他版本会报错，见连接[RuntimeError: Error compiling objects for extension](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/commits/master)
-# 这里的cudatoolkit版本是10.1，而CUDA的版本是10.2，版本不一样，但是在实践中发现没有太大问题，而且修改cudatoolkit=10.2，会找不到包
+# 这里的cudatoolkit版本是10.1，而CUDA的版本是10.2，版本不一样，但是在实践中发现没有太大问题，并且如果直接修改cudatoolkit=10.2，会找不到包
 conda install pytorch==1.4.0 torchvision==0.5.0 cudatoolkit=10.1 -c pytorch
 
 # 下载依赖相关包
