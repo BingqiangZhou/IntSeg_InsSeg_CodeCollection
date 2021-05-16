@@ -36,7 +36,7 @@ pip install matplotlib pandas opencv-python tqdm openpyxl scipy
 
 ### 修改源码
 
-1. 修改代码，解决如下两个找不到包的问题，在前面加一点即可，见[`src\modules\model.py`](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/blob/master/ImageInstanceSegmentation/RefineMask/mmdet/__init__.py)。
+1. 修改代码，解决如下两个找不到包的问题，在前面加一点即可，见[`src/modules/model.py`](./src/modules/model.py)。
 ```
 Traceback (most recent call last):
   File "net.py", line 14, in <module>
@@ -53,7 +53,7 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'vision'
 ``` 
 
-2. 修改代码，解决如下问题（要传入整形，但是传入了浮点型），在除法的位置加上一个`/`，让其整除即可，见[`src\modules\model.py`](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/blob/master/ImageInstanceSegmentation/RefineMask/mmdet/__init__.py)。
+2. 修改代码，解决如下问题（要传入整形，但是传入了浮点型），在除法的位置加上一个`/`，让其整除即可，见[`src/modules/model.py`](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/blob/a783d18dc8c5b8a2a341abeeae6103dc018b60fe/ImageInstanceSegmentation/RSIS/src/modules/model.py#L43)。
 
 ``` 
 Traceback (most recent call last):
@@ -78,7 +78,7 @@ TypeError: new() received an invalid combination of arguments - got (float, int,
 ### net.py
 
 **1. 加载网络模型**
-通过对[ImageInstanceSegmentation\RSIS\src\eval.py]()进行取舍，去掉那部分不需要的代码，加入调用了的方法(做了一些小修改)，得以加载网络模型并进行预测。
+通过对[src/eval.py](./src/eval.py)进行取舍，去掉那部分不需要的代码，加入调用了的方法(做了一些小修改)，得以加载网络模型并进行预测。
 
 **1. 输入图像预处理**
 
@@ -86,7 +86,7 @@ TypeError: new() received an invalid combination of arguments - got (float, int,
 
 **2. 后处理**
 
-网络的输出结果主要包括：输出的mask, 输出的类别class, 输出的分数（可用于停止预测）
+网络的输出结果主要包括：输出的mask, 输出的类别class, 输出的分数（可用于停止预测）。
 后处理为将mask二值化，将所有输出转为ndarray类型。
 
 ### test.py
