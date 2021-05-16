@@ -66,8 +66,8 @@
 * [源Github - https://github.com/yinghdb/EmbedMask](https://github.com/yinghdb/EmbedMask)
 * [Paper PDF - https://arxiv.org/pdf/1912.01954](https://arxiv.org/pdf/1912.01954)
 * 有提供模型文件
-* Release地址（待发布）
-* 实现过程以及记录（待更新）
+* [代码打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/embedmask)
+* [跑通过程记录](./EmbedMask)
 
 🔶 **Instance segmentation by jointly optimizing spatial embeddings and clustering bandwidth -CVPR2019**
 

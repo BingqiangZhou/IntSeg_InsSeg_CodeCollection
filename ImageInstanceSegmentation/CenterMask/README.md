@@ -33,7 +33,6 @@ pip install ninja yacs cython matplotlib tqdm
 pip install pandas opencv-python scipy openpyxl
 
 # 下载安装pycocotools
-cd CenterMask
 git clone https://github.com/cocodataset/cocoapi.git
 cd cocoapi/PythonAPI
 python setup.py build_ext install
