@@ -30,7 +30,7 @@ pip install mmcv-full
 ````
 
 ## 修改及编写代码
-### [代码打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/d2det)
+### [代码打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/refinemask)
 
 ### 下载模型文件
 
@@ -40,17 +40,17 @@ pip install mmcv-full
 
 ### 修改源码
 
-1. 源码中限制了mmcv的版本为1.0.5，我们这里将其去掉，注释掉`\mmdet\__init__.py`中的内容，只保留`import mmcv`这一句。
+1. 源码中限制了mmcv的版本为1.0.5，我们这里将其去掉，注释掉[`\mmdet\__init__.py`](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/blob/master/ImageInstanceSegmentation/RefineMask/mmdet/__init__.py)中的内容，只保留`import mmcv`这一句。
 
-2. 注释了`mmdet\models\builder.py`中`build_detector`方法中Loger相关的代码，不再输出网络结构。
+2. 注释了`mmdet\models\builder.py`中[`build_detector`](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/blob/0339cef73ed674245423aad67927406a03c484fc/ImageInstanceSegmentation/RefineMask/mmdet/models/builder.py#L66)方法中Loger相关的代码，不再输出网络结构。
 
-3. 为了记录推理的时间，这里修改了`mmdet\apis\inference.py`中的[inference_detector](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/blob/8049d66e67a24f7dbd0d0b0fb23ae8416886dc88/ImageInstanceSegmentation/D2Det/mmdet/apis/inference.py#L63)方法，在返回预测结果的同时，返回推理时间。
+3. 为了记录推理的时间，这里修改了`mmdet\apis\inference.py`中的[inference_detector](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/blob/0339cef73ed674245423aad67927406a03c484fc/ImageInstanceSegmentation/RefineMask/mmdet/apis/inference.py#L77)方法，在返回预测结果的同时，返回推理时间。
 
 ### net.py
 
 **1. 输入图像预处理**
 
-这里直接输入图片的路径即可，直接调用源代码`mmdet\apis\inference.py`中的[inference_detector](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/blob/8049d66e67a24f7dbd0d0b0fb23ae8416886dc88/ImageInstanceSegmentation/D2Det/mmdet/apis/inference.py#L63)方法得到结果。
+这里直接输入图片的路径即可，直接调用源代码`mmdet\apis\inference.py`中的[inference_detector](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/blob/0339cef73ed674245423aad67927406a03c484fc/ImageInstanceSegmentation/RefineMask/mmdet/apis/inference.py#L77)方法得到结果。
 
 **2. 后处理**
 

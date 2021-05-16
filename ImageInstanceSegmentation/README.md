@@ -104,8 +104,8 @@
 * [源Github - https://github.com/zhanggang001/RefineMask](https://github.com/zhanggang001/RefineMask)
 * [Paper PDF - https://arxiv.org/pdf/2104.08569](https://arxiv.org/pdf/2104.08569.pdf)
 * 有提供模型文件
-* Release地址（待发布）
-* 实现过程以及记录
+* [代码打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/refinemask)
+* [跑通过程记录](./RefineMask)
 
 ❌ **Weakly-supervised Instance Segmentation via Class-agnostic Learning with Salient Images -CVPR2021**
 
