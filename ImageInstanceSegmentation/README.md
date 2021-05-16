@@ -119,8 +119,8 @@
 * [另一个版本 - https://github.com/JialeCao001/D2Det-mmdet2.1 - 支持更高的mmdet版本](https://github.com/JialeCao001/D2Det-mmdet2.1)
 * [Paper PDF - https://ieeexplore.ieee.org/document/9157372](https://ieeexplore.ieee.org/document/9157372)
 * 有提供模型文件
-* Release地址（待发布）
-* 实现过程以及记录（待更新）
+* [代码打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/d2det)
+* [跑通过程记录](./D2Det)
 
 ✅ **CenterMask : Real-Time Anchor-Free Instance Segmentation -CVPR2020**
 

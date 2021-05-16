@@ -46,6 +46,7 @@ MinGW-W64 GCC-5.4.0，[下载地址](https://sourceforge.net/projects/mingw-w64/
 | :---: | :---: | :---: | :---: | :---: |
 | MaskRCNN | [torchvision](https://pytorch.org/vision/stable/models.html#mask-r-cnn) | [ImageInstanceSegmentation/MaskRCNN](./ImageInstanceSegmentation/MaskRCNN) | - |[打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/maskrcnn) |
 | CenterMask | [youngwanLEE/CenterMask](https://github.com/youngwanLEE/CenterMask) | [ImageInstanceSegmentation/CenterMask](./ImageInstanceSegmentation/CenterMask) | - |[打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/centermask) |
+| D2Det | [JialeCao001/D2Det](https://github.com/JialeCao001/D2Det) | [ImageInstanceSegmentation/D2Det](./ImageInstanceSegmentation/D2Det) | - |[打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/d2det) |
 | 待更新......| | | | | 
 
 ----
