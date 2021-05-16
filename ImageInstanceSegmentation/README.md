@@ -81,8 +81,9 @@
 * [源Github - https://github.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping](https://github.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping)
 * [Paper PDF - https://arxiv.org/pdf/1712.08273](https://arxiv.org/pdf/1712.08273)
 * 有提供模型文件，matlab代码得到的embedding特征图，python读取embedding，聚类，匈牙利匹配得到mask
-* Release地址（待发布）
-* 实现过程以及记录（待更新）
+* [代码打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/rpeig)
+* [跑通过程记录](./RPEIG)
+
 
 ### 基于Detection的方法
 

@@ -1,0 +1,171 @@
+﻿  data.cpp
+e:\workspaces\zbq\projects\is\rpeig\libs\matconvnet-1.0-beta23_modifieddagnn\matlab\src\bits\data.cu(440): warning C4018: “<”: 有符号/无符号不匹配
+e:\workspaces\zbq\projects\is\rpeig\libs\matconvnet-1.0-beta23_modifieddagnn\matlab\src\bits\data.cu(515): warning C4018: “<”: 有符号/无符号不匹配
+  datamex.cpp
+e:\workspaces\zbq\projects\is\rpeig\libs\matconvnet-1.0-beta23_modifieddagnn\matlab\src\bits\datamex.hpp(16): fatal error C1083: 无法打开包括文件: “mex.h”: No such file or directory
+  bnorm_cpu.cpp
+matlab\src\bits\impl\bnorm_cpu.cpp(266): warning C4102: “done”: 未引用的标签
+  matlab\src\bits\impl\bnorm_cpu.cpp(250): note: 编译类 模板 成员函数“vl::ErrorCode vl::impl::bnorm<vl::VLDT_CPU,float>::backward_given_moments(vl::Context &,T *,T *,T *,const T *,const T *,const T *,const T *,const T *,std::size_t,std::size_t,std::size_t,std::size_t,T)”时
+          with
+          [
+              T=float
+          ]
+  matlab\src\bits\impl\bnorm_cpu.cpp(316): note: 参见对正在编译的类 模板 实例化“vl::impl::bnorm<vl::VLDT_CPU,float>”的引用
+matlab\src\bits\impl\bnorm_cpu.cpp(179): warning C4018: “<”: 有符号/无符号不匹配
+  matlab\src\bits\impl\bnorm_cpu.cpp(177): note: 编译类 模板 成员函数“vl::ErrorCode vl::impl::bnorm<vl::VLDT_CPU,float>::forward_given_moments(vl::Context &,T *,const T *,const T *,const T *,const T *,std::size_t,std::size_t,std::size_t,std::size_t)”时
+          with
+          [
+              T=float
+          ]
+  matlab\src\bits\impl\bnorm_cpu.cpp(221): note: 参见对正在编译的函数 模板 实例化“vl::ErrorCode vl::impl::bnorm<vl::VLDT_CPU,float>::forward_given_moments(vl::Context &,T *,const T *,const T *,const T *,const T *,std::size_t,std::size_t,std::size_t,std::size_t)”的引用
+          with
+          [
+              T=float
+          ]
+matlab\src\bits\impl\bnorm_cpu.cpp(185): warning C4018: “<”: 有符号/无符号不匹配
+matlab\src\bits\impl\bnorm_cpu.cpp(110): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+  matlab\src\bits\impl\bnorm_cpu.cpp(300): note: 参见对正在编译的函数 模板 实例化“void compute_ders_and_moments<T>(T *,T *,T *,const T *,const T *,int,int,int,T)”的引用
+          with
+          [
+              T=float
+          ]
+  matlab\src\bits\impl\bnorm_cpu.cpp(282): note: 编译类 模板 成员函数“vl::ErrorCode vl::impl::bnorm<vl::VLDT_CPU,float>::backward(vl::Context &,T *,T *,T *,T *,const T *,const T *,const T *,const T *,std::size_t,std::size_t,std::size_t,std::size_t,T)”时
+          with
+          [
+              T=float
+          ]
+matlab\src\bits\impl\bnorm_cpu.cpp(137): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+  matlab\src\bits\impl\bnorm_cpu.cpp(307): note: 参见对正在编译的函数 模板 实例化“void batch_normalize_backward<T>(T *,const T *,const T *,const T *,const T *,const T *,const T *,int,int,int)”的引用
+          with
+          [
+              T=float
+          ]
+matlab\src\bits\impl\bnorm_cpu.cpp(79): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+  matlab\src\bits\impl\bnorm_cpu.cpp(258): note: 参见对正在编译的函数 模板 实例化“void compute_ders<T>(T *,T *,const T *,const T *,const T *,int,int,int,T)”的引用
+          with
+          [
+              T=float
+          ]
+  matlab\src\bits\impl\bnorm_cpu.cpp(250): note: 编译类 模板 成员函数“vl::ErrorCode vl::impl::bnorm<vl::VLDT_CPU,float>::backward_given_moments(vl::Context &,T *,T *,T *,const T *,const T *,const T *,const T *,const T *,std::size_t,std::size_t,std::size_t,std::size_t,T)”时
+          with
+          [
+              T=float
+          ]
+  copy_cpu.cpp
+  im2row_cpu.cpp
+  imread_gdiplus.cpp
+  SSSE3 instruction set not enabled. Using slower image conversion routines.
+e:\workspaces\zbq\projects\is\rpeig\libs\matconvnet-1.0-beta23_modifieddagnn\matlab\src\bits\impl\imread_helpers.hpp(448): warning C4018: “<”: 有符号/无符号不匹配
+matlab\src\bits\impl\imread_gdiplus.cpp(20): fatal error C1083: 无法打开包括文件: “mex.h”: No such file or directory
+  imread_libjpeg.cpp
+  SSSE3 instruction set not enabled. Using slower image conversion routines.
+e:\workspaces\zbq\projects\is\rpeig\libs\matconvnet-1.0-beta23_modifieddagnn\matlab\src\bits\impl\imread_helpers.hpp(448): warning C4018: “<”: 有符号/无符号不匹配
+matlab\src\bits\impl\imread_libjpeg.cpp(22): fatal error C1083: 无法打开包括文件: “jpeglib.h”: No such file or directory
+  imread_quartz.cpp
+  SSSE3 instruction set not enabled. Using slower image conversion routines.
+e:\workspaces\zbq\projects\is\rpeig\libs\matconvnet-1.0-beta23_modifieddagnn\matlab\src\bits\impl\imread_helpers.hpp(448): warning C4018: “<”: 有符号/无符号不匹配
+matlab\src\bits\impl\imread_quartz.cpp(16): fatal error C1083: 无法打开类型库文件: “ImageIO/ImageIO.h”: No such file or directory
+  normalize_cpu.cpp
+matlab\src\bits\impl\normalize_cpu.cpp(280): warning C4018: “<”: 有符号/无符号不匹配
+  matlab\src\bits\impl\normalize_cpu.cpp(234): note: 编译类 模板 成员函数“vl::ErrorCode vl::impl::lrn<vl::VLDT_CPU,float>::backward(type *,const type *,const type *,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t,type,type,type)”时
+          with
+          [
+              type=float
+          ]
+  matlab\src\bits\impl\normalize_cpu.cpp(385): note: 参见对正在编译的类 模板 实例化“vl::impl::lrn<vl::VLDT_CPU,float>”的引用
+matlab\src\bits\impl\normalize_cpu.cpp(294): warning C4018: “<”: 有符号/无符号不匹配
+matlab\src\bits\impl\normalize_cpu.cpp(300): warning C4018: “<”: 有符号/无符号不匹配
+matlab\src\bits\impl\normalize_cpu.cpp(305): warning C4018: “>=”: 有符号/无符号不匹配
+matlab\src\bits\impl\normalize_cpu.cpp(317): warning C4018: “<”: 有符号/无符号不匹配
+matlab\src\bits\impl\normalize_cpu.cpp(354): warning C4018: “<=”: 有符号/无符号不匹配
+matlab\src\bits\impl\normalize_cpu.cpp(239): warning C4101: “q”: 未引用的局部变量
+matlab\src\bits\impl\normalize_cpu.cpp(179): warning C4018: “<”: 有符号/无符号不匹配
+  matlab\src\bits\impl\normalize_cpu.cpp(150): note: 编译类 模板 成员函数“vl::ErrorCode vl::impl::lrn<vl::VLDT_CPU,float>::forward(type *,const type *,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t,type,type,type)”时
+          with
+          [
+              type=float
+          ]
+matlab\src\bits\impl\normalize_cpu.cpp(187): warning C4018: “<”: 有符号/无符号不匹配
+matlab\src\bits\impl\normalize_cpu.cpp(193): warning C4018: “<”: 有符号/无符号不匹配
+matlab\src\bits\impl\normalize_cpu.cpp(198): warning C4018: “>=”: 有符号/无符号不匹配
+matlab\src\bits\impl\normalize_cpu.cpp(204): warning C4018: “<”: 有符号/无符号不匹配
+  pooling_cpu.cpp
+matlab\src\bits\impl\pooling_cpu.cpp(177): warning C4018: “<”: 有符号/无符号不匹配
+  matlab\src\bits\impl\pooling_cpu.cpp(283): note: 参见对正在编译的函数 模板 实例化“void pooling_backward_cpu<type,acc_sum<type>>(type *,const type *,const type *,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t)”的引用
+          with
+          [
+              type=float
+          ]
+  matlab\src\bits\impl\pooling_cpu.cpp(277): note: 编译类 模板 成员函数“vl::ErrorCode vl::impl::pooling_average<vl::VLDT_CPU,float>::backward(type *,const type *,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t)”时
+          with
+          [
+              type=float
+          ]
+  matlab\src\bits\impl\pooling_cpu.cpp(292): note: 参见对正在编译的类 模板 实例化“vl::impl::pooling_average<vl::VLDT_CPU,float>”的引用
+matlab\src\bits\impl\pooling_cpu.cpp(132): warning C4018: “<”: 有符号/无符号不匹配
+  matlab\src\bits\impl\pooling_cpu.cpp(265): note: 参见对正在编译的函数 模板 实例化“void pooling_forward_cpu<type,acc_sum<type>>(type *,const type *,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t)”的引用
+          with
+          [
+              type=float
+          ]
+  matlab\src\bits\impl\pooling_cpu.cpp(259): note: 编译类 模板 成员函数“vl::ErrorCode vl::impl::pooling_average<vl::VLDT_CPU,float>::forward(type *,const type *,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t)”时
+          with
+          [
+              type=float
+          ]
+  subsample_cpu.cpp
+matlab\src\bits\impl\subsample_cpu.cpp(66): warning C4018: “<”: 有符号/无符号不匹配
+  matlab\src\bits\impl\subsample_cpu.cpp(60): note: 编译类 模板 成员函数“vl::ErrorCode vl::impl::subsample<vl::VLDT_CPU,float>::backward(vl::Context &,type *,const type *,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t)”时
+          with
+          [
+              type=float
+          ]
+  matlab\src\bits\impl\subsample_cpu.cpp(86): note: 参见对正在编译的类 模板 实例化“vl::impl::subsample<vl::VLDT_CPU,float>”的引用
+matlab\src\bits\impl\subsample_cpu.cpp(71): warning C4018: “<”: 有符号/无符号不匹配
+matlab\src\bits\impl\subsample_cpu.cpp(35): warning C4018: “<”: 有符号/无符号不匹配
+  matlab\src\bits\impl\subsample_cpu.cpp(32): note: 编译类 模板 成员函数“vl::ErrorCode vl::impl::subsample<vl::VLDT_CPU,float>::forward(vl::Context &,type *,const type *,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t,std::size_t)”时
+          with
+          [
+              type=float
+          ]
+matlab\src\bits\impl\subsample_cpu.cpp(41): warning C4018: “<”: 有符号/无符号不匹配
+  tinythread.cpp
+  imread.cpp
+  nnbias.cpp
+e:\workspaces\zbq\projects\is\rpeig\libs\matconvnet-1.0-beta23_modifieddagnn\matlab\src\bits\impl\blashelper.hpp(18): fatal error C1083: 无法打开包括文件: “blas.h”: No such file or directory
+  nnbilinearsampler.cpp
+  nnbnorm.cpp
+e:\workspaces\zbq\projects\is\rpeig\libs\matconvnet-1.0-beta23_modifieddagnn\matlab\src\bits\nnbnorm.cu(82): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+e:\workspaces\zbq\projects\is\rpeig\libs\matconvnet-1.0-beta23_modifieddagnn\matlab\src\bits\nnbnorm.cu(211): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+e:\workspaces\zbq\projects\is\rpeig\libs\matconvnet-1.0-beta23_modifieddagnn\matlab\src\bits\nnbnorm.cu(271): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  nnconv.cpp
+e:\workspaces\zbq\projects\is\rpeig\libs\matconvnet-1.0-beta23_modifieddagnn\matlab\src\bits\impl\blashelper.hpp(18): fatal error C1083: 无法打开包括文件: “blas.h”: No such file or directory
+  nnfullyconnected.cpp
+e:\workspaces\zbq\projects\is\rpeig\libs\matconvnet-1.0-beta23_modifieddagnn\matlab\src\bits\impl/blashelper.hpp(18): fatal error C1083: 无法打开包括文件: “blas.h”: No such file or directory
+  nnnormalize.cpp
+e:\workspaces\zbq\projects\is\rpeig\libs\matconvnet-1.0-beta23_modifieddagnn\matlab\src\bits\nnnormalize.cu(60): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+e:\workspaces\zbq\projects\is\rpeig\libs\matconvnet-1.0-beta23_modifieddagnn\matlab\src\bits\nnnormalize.cu(118): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  nnpooling.cpp
+  正在编译...
+  nnsubsample.cpp
+e:\workspaces\zbq\projects\is\rpeig\libs\matconvnet-1.0-beta23_modifieddagnn\matlab\src\bits\impl/blashelper.hpp(18): fatal error C1083: 无法打开包括文件: “blas.h”: No such file or directory
+  vl_cudatool.cpp
+e:\workspaces\zbq\projects\is\rpeig\libs\matconvnet-1.0-beta23_modifieddagnn\matlab\src\bits/mexutils.h(17): fatal error C1083: 无法打开包括文件: “mex.h”: No such file or directory
+  vl_imreadjpeg.cpp
+e:\workspaces\zbq\projects\is\rpeig\libs\matconvnet-1.0-beta23_modifieddagnn\matlab\src\bits/impl/blashelper.hpp(18): fatal error C1083: 无法打开包括文件: “blas.h”: No such file or directory
+  vl_nnbilinearsampler.cpp
+e:\workspaces\zbq\projects\is\rpeig\libs\matconvnet-1.0-beta23_modifieddagnn\matlab\src\bits/mexutils.h(17): fatal error C1083: 无法打开包括文件: “mex.h”: No such file or directory
+  vl_nnbnorm.cpp
+e:\workspaces\zbq\projects\is\rpeig\libs\matconvnet-1.0-beta23_modifieddagnn\matlab\src\bits/mexutils.h(17): fatal error C1083: 无法打开包括文件: “mex.h”: No such file or directory
+  vl_nnconv.cpp
+e:\workspaces\zbq\projects\is\rpeig\libs\matconvnet-1.0-beta23_modifieddagnn\matlab\src\bits/mexutils.h(17): fatal error C1083: 无法打开包括文件: “mex.h”: No such file or directory
+  vl_nnconvt.cpp
+e:\workspaces\zbq\projects\is\rpeig\libs\matconvnet-1.0-beta23_modifieddagnn\matlab\src\bits/mexutils.h(17): fatal error C1083: 无法打开包括文件: “mex.h”: No such file or directory
+  vl_nnnormalize.cpp
+e:\workspaces\zbq\projects\is\rpeig\libs\matconvnet-1.0-beta23_modifieddagnn\matlab\src\bits/mexutils.h(17): fatal error C1083: 无法打开包括文件: “mex.h”: No such file or directory
+  vl_nnpool.cpp
+e:\workspaces\zbq\projects\is\rpeig\libs\matconvnet-1.0-beta23_modifieddagnn\matlab\src\bits/mexutils.h(17): fatal error C1083: 无法打开包括文件: “mex.h”: No such file or directory
+  vl_taccummex.cpp
+e:\workspaces\zbq\projects\is\rpeig\libs\matconvnet-1.0-beta23_modifieddagnn\matlab\src\bits/mexutils.h(17): fatal error C1083: 无法打开包括文件: “mex.h”: No such file or directory
+  vl_tmove.cpp
+e:\workspaces\zbq\projects\is\rpeig\libs\matconvnet-1.0-beta23_modifieddagnn\matlab\src\bits/mexutils.h(17): fatal error C1083: 无法打开包括文件: “mex.h”: No such file or directory
