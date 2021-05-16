@@ -23,9 +23,9 @@
 
 ✅ **Recurrent Neural Networks for Semantic Instance Segmentation -arxiv2017**
 
-- [源Github - https://github.com/imatge-upc/rsis](https://github.com/imatge-upc/rsis)
-- [Paper PDF - https://arxiv.org/pdf/1712.00617](https://arxiv.org/pdf/1712.00617)
-- 有提供模型文件
+* [源Github - https://github.com/imatge-upc/rsis](https://github.com/imatge-upc/rsis)
+* [Paper PDF - https://arxiv.org/pdf/1712.00617](https://arxiv.org/pdf/1712.00617)
+* 有提供模型文件
 * [代码打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/rsis)
 * [跑通过程记录](./RSIS)
 
