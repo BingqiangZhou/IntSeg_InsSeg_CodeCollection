@@ -48,8 +48,8 @@ MinGW-W64 GCC-5.4.0，[下载地址](https://sourceforge.net/projects/mingw-w64/
 | 网络 | 来源/源Github库 | 修改后的代码 | 相关描述 |  |
 | :---: | :---: | :---: | :---: | :---: |
 | RSIS | [imatge-upc/rsis](https://github.com/imatge-upc/rsis) | [RSIS](./ImageInstanceSegmentation/RSIS) | - | [打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/rsis) |
-| EmbedMask | [yinghdb/EmbedMask](https://github.com/yinghdb/EmbedMask) | - | Matlab源码 | - |
-| RPEIG | <a href="https://github.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping">aimerykong/</br>Recurrent-Pixel-Embedding-for-Instance-Grouping</a> | - | - | - |
+| EmbedMask | [yinghdb/EmbedMask](https://github.com/yinghdb/EmbedMask) | [EmbedMask](./ImageInstanceSegmentation/EmbedMask)  | - | [打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/embedmask) |
+| RPEIG | <a href="https://github.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping">aimerykong/</br>Recurrent-Pixel-Embedding-for-Instance-Grouping</a> | - | Matlab源码 | - |
 | MaskRCNN | [torchvision](https://pytorch.org/vision/stable/models.html#mask-r-cnn) | [MaskRCNN](./ImageInstanceSegmentation/MaskRCNN) | - |[打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/maskrcnn) |
 | RefineMask | [zhanggang001/RefineMask](https://github.com/zhanggang001/RefineMask) | [RefineMask](./ImageInstanceSegmentation/RefineMask) | - | [打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/refinemask) |
 | CenterMask | [youngwanLEE/CenterMask](https://github.com/youngwanLEE/CenterMask) | [CenterMask](./ImageInstanceSegmentation/CenterMask) | - |[打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/centermask) |

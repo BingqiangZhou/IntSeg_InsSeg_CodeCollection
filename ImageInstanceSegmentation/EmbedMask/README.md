@@ -54,22 +54,21 @@ pip install ninja yacs cython matplotlib tqdm pandas opencv-python scipy openpyx
 
 ### 修改源码
 
-1. 不再将每个分类的的置信分数的阈值作为参数，直接将去放在[`COCODemo`](./demo/predictor.py)类中`confidence_thresholds_for_classes`，见[`demo/predictor.py`]()。
+1. 不再将每个分类的的置信分数的阈值作为参数，直接将去放在[`COCODemo`](./demo/predictor.py)类中`confidence_thresholds_for_classes`，见[`demo/predictor.py`](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/blob/943a042f9d028ef8242829baa7c8db6b2dd9bf28/ImageInstanceSegmentation/EmbedMask/demo/predictor.py#L129)。
 
-2. 预处理去掉Resize操作，见[`demo/predictor.py`]()。
+2. 预处理去掉Resize操作，见[`demo/predictor.py`](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/blob/943a042f9d028ef8242829baa7c8db6b2dd9bf28/ImageInstanceSegmentation/EmbedMask/demo/predictor.py#L181)。
 
-3. 加入记录推理的时间，修改`demo/predictor.py`中的[compute_prediction]()方法，在返回预测结果的同时，返回推理时间。
+3. 加入记录推理的时间，修改`demo/predictor.py`中的[compute_prediction](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/blob/943a042f9d028ef8242829baa7c8db6b2dd9bf28/ImageInstanceSegmentation/EmbedMask/demo/predictor.py#L234)方法，在返回预测结果的同时，返回推理时间。
 
 ### net.py
 
 **1. 输入图像预处理**
 
-这里直接输入图片的路径即可，直接调用源代码`demo/predictor.py`中的[compute_prediction]()方法得到结果。
+这里读取到图片，然后输入图片即可，调用源代码`demo/predictor.py`中的[compute_prediction](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/blob/943a042f9d028ef8242829baa7c8db6b2dd9bf28/ImageInstanceSegmentation/EmbedMask/demo/predictor.py#L217)方法得到结果。
 
 **2. 后处理**
 
-网络的输出结果主要包括：输出的mask, 输出的类别class, 输出的分数（可用于停止预测）。
-后处理为将mask二值化，将所有输出转为ndarray类型。
+只保留预测mask的分数，大于阈值（默认0.2）的相关数据，包括mask、bbox、类别标签、mask的分数。
 
 ### test.py
 
