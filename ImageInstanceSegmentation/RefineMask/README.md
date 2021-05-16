@@ -1,4 +1,4 @@
-# D2Det跑通过程记录
+# RefineMask跑通过程记录
 
 在作者提供的代码([Github地址](https://github.com/zhanggang001/RefineMask))的基础上，进行修改，实现推理预测。
 
