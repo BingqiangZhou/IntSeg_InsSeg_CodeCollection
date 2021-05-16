@@ -18,7 +18,7 @@ cd D2Det
 conda create -n d2det python=3.7
 conda activate d2det
 
-# 安装pytorch(1.4.0)、torchvision(0.5.0)包，在windows下，得安装这个版本才行，其他版本会报错，见连接[RuntimeError: Error compiling objects for extension](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/commits/master)
+# 安装pytorch(1.4.0)、torchvision(0.5.0)包，在windows下，得安装这个版本才行，其他版本会报错，见连接[RuntimeError: Error compiling objects for extension](https://github.com/facebookresearch/maskrcnn-benchmark/issues/1236#issuecomment-645739809)
 # 这里的cudatoolkit版本是10.1，而CUDA的版本是10.2，版本不一样，但是在实践中发现没有太大问题，并且如果直接修改cudatoolkit=10.2，会找不到包
 conda install pytorch==1.4.0 torchvision==0.5.0 cudatoolkit=10.1 -c pytorch
 
@@ -43,23 +43,23 @@ pip install pandas opencv-python scipy openpyxl tqdm
 ````
 
 ## 修改及编写代码
-### [代码打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/centermask)
+### [代码打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/d2det)
 
 ### 下载模型文件
 
-**需要科学上网** [源Github库](https://github.com/JialeCao001/D2Det)下提供了许多模型的[下载地址](https://github.com/JialeCao001/D2Det#results)，我将`D2Det-instance-res101.pth`放在了本仓库的[Releaes](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/centermask)中，提供下载。
+**需要科学上网** [源Github库](https://github.com/JialeCao001/D2Det)下提供了许多模型的[下载地址](https://github.com/JialeCao001/D2Det#results)，我将`D2Det-instance-res101.pth`放在了本仓库的[Releaes](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/d2det)中，提供下载。
 
-这里以[D2Det-instance-res101.pth](https://www.dropbox.com/s/bhpf6jud8ovvxmh/centermask-R-50-FPN-ms-2x.pth?dl=1)为例，下载后放到`CenterMask\models`文件夹中。
+这里以`D2Det-instance-res101.pth`为例，下载后放到`D2Det\models`文件夹中。
 
 ### 修改CenterMask源码
 
-1. 为了记录推理的时间，这里修改了`mmdet\apis\inference.py`中的[inference_detector](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/blob/7f614785c5afc42d4570e0d5e2fbbcbc37219e28/ImageInstanceSegmentation/CenterMask/demo/predictor.py#L240)方法，在返回预测结果的同时，返回推理时间。
+1. 为了记录推理的时间，这里修改了`mmdet\apis\inference.py`中的[inference_detector](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/blob/8049d66e67a24f7dbd0d0b0fb23ae8416886dc88/ImageInstanceSegmentation/D2Det/mmdet/apis/inference.py#L63)方法，在返回预测结果的同时，返回推理时间。
 
 ### net.py
 
 **1. 输入图像预处理**
 
-这里直接输入图片的路径即可，直接调用源代码`mmdet\apis\inference.py`中的[inference_detector](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/blob/7f614785c5afc42d4570e0d5e2fbbcbc37219e28/ImageInstanceSegmentation/CenterMask/demo/predictor.py#L240)得到结果。
+这里直接输入图片的路径即可，直接调用源代码`mmdet\apis\inference.py`中的[inference_detector](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/blob/8049d66e67a24f7dbd0d0b0fb23ae8416886dc88/ImageInstanceSegmentation/D2Det/mmdet/apis/inference.py#L63)方法得到结果。
 
 **2. 后处理**
 
@@ -72,7 +72,7 @@ pip install pandas opencv-python scipy openpyxl tqdm
 2. 将保留下来的结果，形式变为：
     - masks：list[二值图像格式]，数据结果为二值图像的列表
     - bboxes: list[bbox坐标]，这里不包括分数
-    - class_labels: list[列表的标号]
+    - class_labels: list[mask的类别标号]
 
 ### test.py
 

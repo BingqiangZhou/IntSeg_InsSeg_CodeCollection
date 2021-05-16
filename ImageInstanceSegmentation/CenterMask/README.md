@@ -22,7 +22,7 @@ conda activate centermask
 # 这一步不知道是不是一定需要，但是源代码中的Install.md中有这一步，这里就直接复制过来执行了
 conda install ipython
 
-# 安装pytorch(1.4.0)、torchvision(0.5.0)包，主要要windows下，得安装这个版本才行，其他版本会报错，见连接[RuntimeError: Error compiling objects for extension](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/commits/master)
+# 安装pytorch(1.4.0)、torchvision(0.5.0)包，主要要windows下，得安装这个版本才行，其他版本会报错，见连接[RuntimeError: Error compiling objects for extension](https://github.com/facebookresearch/maskrcnn-benchmark/issues/1236#issuecomment-645739809)
 # 这里的cudatoolkit版本是10.1，而CUDA的版本是10.2，版本不一样，但是在实践中发现没有太大问题，并且如果直接修改cudatoolkit=10.2，会找不到包
 conda install pytorch==1.4.0 torchvision==0.5.0 cudatoolkit=10.1 -c pytorch
 
@@ -64,7 +64,7 @@ python setup.py build develop
 
 **1. 输入图像预处理**
 
-这里直接输入图片的路径即可，直接调用源代码`demo\predictor.py`中的[compute_prediction](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/blob/7f614785c5afc42d4570e0d5e2fbbcbc37219e28/ImageInstanceSegmentation/CenterMask/demo/predictor.py#L240)方法省去了许多麻烦。
+这里直接输入图片的路径即可，直接调用源代码`demo\predictor.py`中的[compute_prediction](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/blob/7f614785c5afc42d4570e0d5e2fbbcbc37219e28/ImageInstanceSegmentation/CenterMask/demo/predictor.py#L240)方法得到结果。
 
 **2. 后处理**
 
