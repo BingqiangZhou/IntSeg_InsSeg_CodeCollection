@@ -22,6 +22,9 @@ conda activate d2det
 # 这里的cudatoolkit版本是10.1，而CUDA的版本是10.2，版本不一样，但是在实践中发现没有太大问题，并且如果直接修改cudatoolkit=10.2，会找不到包
 conda install pytorch==1.4.0 torchvision==0.5.0 cudatoolkit=10.1 -c pytorch
 
+# 下载依赖相关包
+pip install ninja yacs cython matplotlib tqdm 
+
 # 安装mmcv，mmdetection对其有依赖，这里会需要编译安装，会花费十分钟左右的时间
 # 注意不要安装过高的版本，安装过高的版本，可能会报错[“No module named 'mmcv.cnn.weight_init’”](https://github.com/open-mmlab/mmdetection/issues/3402#issuecomment-680420003)
 pip install mmcv==0.4.3

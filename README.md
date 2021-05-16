@@ -6,6 +6,10 @@
 
 windows 10 (20H2)
 
+VS Community 2017 (15.9.36)
+
+Matlab 2018b
+
 CUDA 10.2.89，[下载地址](https://developer.nvidia.cn/cuda-toolkit-archive)
 
 cuDNN 7.6.5，[下载地址](https://developer.nvidia.com/rdp/cudnn-archive)
@@ -41,15 +45,15 @@ MinGW-W64 GCC-5.4.0，[下载地址](https://sourceforge.net/projects/mingw-w64/
 
 ### 相关代码
 
-| 网络 | 来源/源Github库 | 本库中地址 | 相关描述 |  |
+| 网络 | 来源/源Github库 | 查看修改后的代码 | 相关描述 |  |
 | :---: | :---: | :---: | :---: | :---: |
 | RSIS | [imatge-upc/rsis](https://github.com/imatge-upc/rsis) | - | - | - |
 | EmbedMask | [yinghdb/EmbedMask](https://github.com/yinghdb/EmbedMask) | - | Matlab源码 | - |
 | RPEIG | [aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping](https://github.com/aimerykong/Recurrent-Pixel-Embedding-for-Instance-Grouping) | - | - | - |
-| MaskRCNN | [torchvision](https://pytorch.org/vision/stable/models.html#mask-r-cnn) | [ImageInstanceSegmentation/MaskRCNN](./ImageInstanceSegmentation/MaskRCNN) | - |[打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/maskrcnn) |
+| MaskRCNN | [torchvision](https://pytorch.org/vision/stable/models.html#mask-r-cnn) | [MaskRCNN](./ImageInstanceSegmentation/MaskRCNN) | - |[打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/maskrcnn) |
 | RefineMask | [zhanggang001/RefineMask](https://github.com/zhanggang001/RefineMask) | - | - | - |
-| CenterMask | [youngwanLEE/CenterMask](https://github.com/youngwanLEE/CenterMask) | [ImageInstanceSegmentation/CenterMask](./ImageInstanceSegmentation/CenterMask) | - |[打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/centermask) |
-| D2Det | [JialeCao001/D2Det](https://github.com/JialeCao001/D2Det) | [ImageInstanceSegmentation/D2Det](./ImageInstanceSegmentation/D2Det) | - |[打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/d2det) |
+| CenterMask | [youngwanLEE/CenterMask](https://github.com/youngwanLEE/CenterMask) | [CenterMask](./ImageInstanceSegmentation/CenterMask) | - |[打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/centermask) |
+| D2Det | [JialeCao001/D2Det](https://github.com/JialeCao001/D2Det) | [D2Det](./ImageInstanceSegmentation/D2Det) | - |[打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/d2det) |
 
 
 ----

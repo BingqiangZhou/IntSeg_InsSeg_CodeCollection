@@ -1,44 +1,31 @@
 # D2Det跑通过程记录
 
-在作者提供的代码([Github地址](https://github.com/JialeCao001/D2Det))的基础上，进行修改，实现推理预测。
-
-源代码基于[mmdetection](https://github.com/open-mmlab/mmdetection)实现，应该与[FCOS](https://github.com/tianzhi0549/FCOS)和[maskrcn-benchmark](https://github.com/facebookresearch/maskrcnn-benchmark)有某种联系，有一些相似。
+在作者提供的代码([Github地址](https://github.com/zhanggang001/RefineMask))的基础上，进行修改，实现推理预测。
 
 ## 创建环境以及安装相关Python包
 
 **注意：首先得安装好CUDA、cuDNN以及GCC，[下载地址](../../README.md#实验环境)**
 
+由于mmcv-full一直编译出错，这里改用了CUDA 11.1、cuDNN 8.0.5，参考：[windows 10 install mmcv-full error](https://github.com/open-mmlab/mmcv/issues/789#issuecomment-768289939)
+
 ````bash
 
 # 下载源代码
-git clone https://github.com/JialeCao001/D2Det.git
-cd D2Det
+git clone https://github.com/zhanggang001/RefineMask.git
+cd RefineMask
 
 # 创建虚拟环境
-conda create -n d2det python=3.7
-conda activate d2det
+conda create -n refinemask python=3.6
+conda activate refinemask
 
-# 安装pytorch(1.4.0)、torchvision(0.5.0)包，在windows下，得安装这个版本才行，其他版本会报错，见连接[RuntimeError: Error compiling objects for extension](https://github.com/facebookresearch/maskrcnn-benchmark/issues/1236#issuecomment-645739809)
-# 这里的cudatoolkit版本是10.1，而CUDA的版本是10.2，版本不一样，但是在实践中发现没有太大问题，并且如果直接修改cudatoolkit=10.2，会找不到包
-conda install pytorch==1.4.0 torchvision==0.5.0 cudatoolkit=10.1 -c pytorch
+# 安装pytorch、torchvision
+conda install pytorch torchvision cudatoolkit=11.1 -c pytorch -c nvidia
 
-# 安装mmcv，mmdetection对其有依赖，这里会需要编译安装，会花费十分钟左右的时间
-# 注意不要安装过高的版本，安装过高的版本，可能会报错[“No module named 'mmcv.cnn.weight_init’”](https://github.com/open-mmlab/mmdetection/issues/3402#issuecomment-680420003)
-pip install mmcv==0.4.3
+# 下载依赖相关包
+pip install cython yacs matplotlib pandas opencv-python tqdm openpyxl scipy terminaltables pycocotools lvis
 
-# 下载安装mmdetection
-git clone https://github.com/open-mmlab/mmdetection.git
-
-# 下载安装mmdetection依赖的pycocotools
-cd mmdetection
-pip install "git+https://github.com/open-mmlab/cocoapi.git#subdirectory=pycocotools"
-
-# 回到源代码的D2Det路径下，编译安装，这里会需要十分钟左右
-cd ../
-python setup.py build develop
-
-# 可选，test.py相关依赖
-pip install pandas opencv-python scipy openpyxl tqdm
+# 安装mmcv，对应pytorch的版本见https://github.com/open-mmlab/mmcv#installation，这里会需要编译安装，会花费一二十分钟的时间
+pip install mmcv-full
 
 ````
 
@@ -47,13 +34,17 @@ pip install pandas opencv-python scipy openpyxl tqdm
 
 ### 下载模型文件
 
-**需要科学上网** [源Github库](https://github.com/JialeCao001/D2Det)下提供了许多模型的[下载地址](https://github.com/JialeCao001/D2Det#results)，我将`D2Det-instance-res101.pth`放在了本仓库的[Releaes](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/d2det)中，提供下载。
+**需要科学上网** [源Github库](https://github.com/zhanggang001/RefineMask)下提供了许多模型的[下载地址](https://github.com/zhanggang001/RefineMask#main-results)，我将`r50-coco-2x.pth`放在了本仓库的[Releaes](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/refinemask)中，提供下载。
 
-这里以`D2Det-instance-res101.pth`为例，下载后放到`D2Det\models`文件夹中。
+这里以`r50-coco-2x.pth`为例，下载后放到`RefineMask\models`文件夹中。
 
 ### 修改源码
 
-1. 为了记录推理的时间，这里修改了`mmdet\apis\inference.py`中的[inference_detector](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/blob/8049d66e67a24f7dbd0d0b0fb23ae8416886dc88/ImageInstanceSegmentation/D2Det/mmdet/apis/inference.py#L63)方法，在返回预测结果的同时，返回推理时间。
+1. 源码中限制了mmcv的版本为1.0.5，我们这里将其去掉，注释掉`\mmdet\__init__.py`中的内容，只保留`import mmcv`这一句。
+
+2. 注释了`mmdet\models\builder.py`中`build_detector`方法中Loger相关的代码，不再输出网络结构。
+
+3. 为了记录推理的时间，这里修改了`mmdet\apis\inference.py`中的[inference_detector](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/blob/8049d66e67a24f7dbd0d0b0fb23ae8416886dc88/ImageInstanceSegmentation/D2Det/mmdet/apis/inference.py#L63)方法，在返回预测结果的同时，返回推理时间。
 
 ### net.py
 
@@ -79,4 +70,3 @@ pip install pandas opencv-python scipy openpyxl tqdm
 将整个Pascal VOC 2012验证集中的图片跑一遍预测，通过真实的mask与预测的mask做最大匹配，得到一一对应的mask，并求出相关的指标，最后保存mask成图像，相关指标数据保存到Excel当中。
 
 ---
-
