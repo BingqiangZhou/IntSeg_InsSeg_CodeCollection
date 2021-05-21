@@ -18,10 +18,10 @@ MinGW-W64 GCC-5.4.0，[下载地址](https://sourceforge.net/projects/mingw-w64/
 
 ## 所做的主要工作
 
-在一些交互式图像分割、图像实例分割工作相关代码（有相应的Github库）的基础上，写出一个推理的类（net.py），然后再Pascal VOC 2012数据集（[官方地址 host.robots.ox.ac.uk](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/)、[Pascal VOC Dataset Mirror (pjreddie.com)包含测试集](https://pjreddie.com/projects/pascal-voc-dataset-mirror/))上，测试（test.py）得到分割结果（mask）。
+在一些交互式图像分割、图像实例分割工作相关代码（有相应的Github库）的基础上，写出一个推理的类（net.py），然后在Pascal VOC 2012数据集（[官方地址 host.robots.ox.ac.uk](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/)、[Pascal VOC Dataset Mirror (pjreddie.com)包含测试集](https://pjreddie.com/projects/pascal-voc-dataset-mirror/))上，测试（test.py）得到分割结果（mask），并计算相关指标（IOU、F1-Score）。
 
 - net.py：预测推理，包含图像预处理（normalize等）、后处理（二值化等）。
-- test.py：在Pascal VOC 2012数据集上，做测试得到分割结果（mask）
+- test.py：在Pascal VOC 2012数据集上，做测试得到分割结果（mask），并计算相关指标（IOU、F1-Score）。
 
 ## [交互式图像分割](./InteractiveImageSegmentation)
 
