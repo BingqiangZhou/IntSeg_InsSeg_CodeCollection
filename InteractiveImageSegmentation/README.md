@@ -80,7 +80,7 @@
 * [Paper PDF - https://openaccess.thecvf.com/content_CVPR_2019/papers/...pdf](https://openaccess.thecvf.com/content_CVPR_2019/papers/Agustsson_Interactive_Full_Image_Segmentation_by_Considering_All_Regions_Jointly_CVPR_2019_paper.pdf)
 * 没有找到开源代码
 
-✖️ **MultiSeg: Semantically meaningful, scalediverse segmentations from minimal user input**
+✖️ **MultiSeg: Semantically meaningful, scale-diverse segmentations from minimal user input**
 * [Paper PDF - https://openaccess.thecvf.com/content_CVPR_2019/papers/...pdf](https://openaccess.thecvf.com/content_ICCV_2019/papers/Liew_MultiSeg_Semantically_Meaningful_Scale-Diverse_Segmentations_From_Minimal_User_Input_ICCV_2019_paper.pdf)
 * 没有找到开源代码
 

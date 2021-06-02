@@ -33,8 +33,8 @@ def f1_score(binary_predict, binary_target,  epsilon=1e-6):
 #   https://blog.csdn.net/qq_25602729/article/details/108377648
 #   https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.linear_sum_assignment.html
 def max_iou_assignment(iou_matrix):
-    indx_1, indx_2 = linear_sum_assignment(-iou_matrix)
-    return indx_1, indx_2
+    row_index, col_index = linear_sum_assignment(-iou_matrix)
+    return row_index, col_index
 
 net = RIISNet()
 
@@ -131,4 +131,3 @@ data_list = pd.DataFrame(data_list, #index=file_names,
                             "mean inference time for each object", "bg iou", "mean iou with bg", "bg f1-score", "mean f1-score with bg"])
 data_list.to_excel(writer, float_format="%.6f", index=False)
 writer.close()
-    

@@ -31,8 +31,8 @@ def f1_score(binary_predict, binary_target,  epsilon=1e-6):
 #   https://blog.csdn.net/qq_25602729/article/details/108377648
 #   https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.linear_sum_assignment.html
 def max_iou_assignment(iou_matrix):
-    indx_1, indx_2 = linear_sum_assignment(-iou_matrix)
-    return indx_1, indx_2
+    row_index, col_index = linear_sum_assignment(-iou_matrix)
+    return row_index, col_index
 
 # net = RefineMask(threshold=0.8)
 net = D2Det() # threshold=0.5
@@ -79,7 +79,8 @@ for name in tqdm(file_names, desc=f"{net_name}"):
             gt = np.uint8(label_np == (i+1))
             iou_matrix[i, j] = iou(outputs[j], gt)
     # print(iou_matrix)
-    _, index = max_iou_assignment(iou_matrix) # 得到“完美配置”（最大匹配）
+    # row_index, col_index 
+    gt_index, pred_mask_index = max_iou_assignment(iou_matrix) # 得到“完美配置”（最大匹配）
     # 可视化 对应配置结果
     # for i in range(nums_object):
     #     plt.subplot(nums_object, 2, 2*i + 1)
@@ -98,18 +99,18 @@ for name in tqdm(file_names, desc=f"{net_name}"):
     for i in range(nums_object):
         gt = np.uint8(label_np == (i+1))
 
-        if i >= nums_pred_object:
+        if i in gt_index:
             iou_v = 0
             f1_score_v = 0
             # cv.imwrite(os.path.join(out_dir, f"{name}_object{i}_iou{iou_v}_f1score{f1_score_v}.png"), np.zeros_like(outputs[0]))
         else:
-            iou_v = iou_matrix[i][index[i]]
-            f1_score_v = f1_score(outputs[index[i]], gt)
+            iou_v = iou_matrix[i][pred_mask_index[i]]
+            f1_score_v = f1_score(outputs[pred_mask_index[i]], gt)
 
-            bg[outputs[index[i]] > 0] = 0 
-            predict_label[outputs[index[i]] > 0] = i + 1
+            bg[outputs[pred_mask_index[i]] > 0] = 0 
+            predict_label[outputs[pred_mask_index[i]] > 0] = i + 1
             
-            cv.imwrite(os.path.join(out_dir, f"{name}_object{i}_iou{iou_v}_f1score{f1_score_v}.png"), outputs[index[i]]*255)
+            cv.imwrite(os.path.join(out_dir, f"{name}_object{i}_iou{iou_v}_f1score{f1_score_v}.png"), outputs[pred_mask_index[i]]*255)
         
         iou_list.append(iou_v)
         f1_score_list.append(f1_score_v)

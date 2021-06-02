@@ -30,8 +30,8 @@ def f1_score(binary_predict, binary_target,  epsilon=1e-6):
 #   https://blog.csdn.net/qq_25602729/article/details/108377648
 #   https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.linear_sum_assignment.html
 def max_iou_assignment(iou_matrix):
-    indx_1, indx_2 = linear_sum_assignment(-iou_matrix)
-    return indx_1, indx_2
+    row_index, col_index = linear_sum_assignment(-iou_matrix)
+    return row_index, col_index
 
 # 获取图像名列表
 voc_root_dir = r'E:\Datasets\iis_datasets\VOCdevkit\VOC2012'
