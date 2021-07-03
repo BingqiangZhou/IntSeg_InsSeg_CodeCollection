@@ -29,7 +29,7 @@
 * [Paper PDF - https://ieeexplore.ieee.org/document/8237559](https://ieeexplore.ieee.org/document/8237559)
 * 没有找到开源代码
 
-**Deep extreme cut: From extreme points to object segmentation**
+✅ **Deep extreme cut: From extreme points to object segmentation**
 * [项目主页 - https://cvlsegmentation.github.io/dextr/](https://cvlsegmentation.github.io/dextr/)
 * [源Github - https://github.com/scaelles/DEXTR-PyTorch/](https://github.com/scaelles/DEXTR-PyTorch/)
 * [Paper PDF - https://arxiv.org/pdf/1711.09081](https://arxiv.org/pdf/1711.09081)
