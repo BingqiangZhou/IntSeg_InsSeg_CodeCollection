@@ -12,7 +12,7 @@ conda install matplotlib opencv pillow scikit-learn scikit-image
 ````
 
 ## 修改及编写代码
-### [代码打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/d2det)
+### [代码打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/dextr)
 
 ### 下载模型文件
 
@@ -29,7 +29,7 @@ conda install matplotlib opencv pillow scikit-learn scikit-image
 交互分割单张图像，通过OpenCV显示源图像，进行交互，显示分割结果，具体操作有：
 
 1. 运行程序，选择一张图像
-2. 左键进行交互（打点），右键撤销上次交互，当完成四个极值点的交互时，可以按下p键("P" or "p")进行分割，交互结果在显示的同时将保存在原图像的同目录下。
+2. 左键进行交互（打点），右键撤销上次交互，当完成四个极值点的交互时，可以按下p键("P" or "p")进行分割，交互结果在显示的同时将保存在原图像的
 3. 按下o键("O" or "o"))，选择一张新的照片进行分割。
 
 ---
