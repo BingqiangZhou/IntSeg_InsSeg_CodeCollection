@@ -53,6 +53,13 @@ cv.setMouseCallback("image", click)
 show_image = image.copy()
 
 while True:
+    cv.imshow("image", show_image[:, :, ::-1])
+    key = cv.waitKey(100)
+    if key == 27:
+        break
+    if cv.getWindowProperty("image", cv.WND_PROP_VISIBLE) <= 0: # window has been closed.
+        break
+    
     if key == 112 or key == 80: # "p" or "P"
         if click_times == 4:
             # segment
@@ -74,7 +81,6 @@ while True:
             # init
             click_times = 0
             show_image = image.copy()
-            cv.imshow("image", show_image[:, :, ::-1])
             extreme_points = []
     elif key == 111 or key == 79: # "o" or "O"
         # open a new image to segment
@@ -84,14 +90,6 @@ while True:
         # init
         click_times = 0
         show_image = image.copy()
-        cv.imshow("image", show_image[:, :, ::-1])
         extreme_points = []
-    
-    cv.imshow("image", show_image[:, :, ::-1])
-    key = cv.waitKey(100)
-    if key == 27:
-        break
-    if cv.getWindowProperty("image", cv.WND_PROP_VISIBLE) <= 0: # window has been closed.
-        break
 
 root.destroy()
