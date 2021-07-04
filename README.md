@@ -37,6 +37,8 @@ MinGW-W64 GCC-5.4.0，[下载地址](https://sourceforge.net/projects/mingw-w64/
 
 ### 相关代码
 
+#### 1. 相关交互式图像分割方法代码
+
 | 网络 | 来源/源Github库 | 本库中地址 | 相关描述 | |
 | :-----: | :-----: | :-----: | :-----: | :-----: |
 | DeepGrabCut | [jfzhang95/DeepGrabCut](https://github.com/jfzhang95/DeepGrabCut-PyTorch) | [DeepGrabCut](./InteractiveImageSegmentation/DeepGrabCut) | - | [打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/deepgrabcut) |
@@ -44,6 +46,10 @@ MinGW-W64 GCC-5.4.0，[下载地址](https://sourceforge.net/projects/mingw-w64/
 | G99AIS | [MarcoForte/DeepInteractiveSegmentation](https://github.com/MarcoForte/DeepInteractiveSegmentation) | [DEXTR](./InteractiveImageSegmentation/G99AIS) | - | [打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/g99ais) |
 
 待更新......
+
+#### 2. 随机采样
+
+一些根据图像标签随机采点的[随机采样方法](./InteractiveImageSegmentation/RandomSample/random_sample.py)
 
 ## [图像实例分割](./ImageInstanceSegmentation)
 
