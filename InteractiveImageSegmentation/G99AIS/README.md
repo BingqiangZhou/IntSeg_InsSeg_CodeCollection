@@ -20,11 +20,11 @@ conda install matplotlib opencv pillow scikit-learn scikit-image guided_filter_p
 
 以`dextr_pascal-sbd.pth`为例，下载后放到`DEXTR/models`文件夹中。
 
-### [net.py](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/blob/master/InteractiveImageSegmentation/DeepInteractiveSegmentation/net.py)
+### [net.py](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/blob/master/InteractiveImageSegmentation/DeepInteractiveSegmentation/G99AIS/net.py)
 
 `net.py`主要提取[源Github库](https://github.com/MarcoForte/DeepInteractiveSegmentation)中[demo.py](https://github.com/MarcoForte/DeepInteractiveSegmentation/blob/master/demo.py)文件中的内容，并将其封装起来。
 
-### [test.py](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/blob/master/InteractiveImageSegmentation/DeepInteractiveSegmentation/test.py)
+### [test.py](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/blob/master/InteractiveImageSegmentation/DeepInteractiveSegmentation/G99AIS/test.py)
 
 交互分割单张图像，通过OpenCV显示源图像，进行交互，显示分割结果，具体操作有：
 
@@ -32,7 +32,7 @@ conda install matplotlib opencv pillow scikit-learn scikit-image guided_filter_p
 2. 左键进行前景交互（打点），右键进行背景交互，按住'ctrl'键并点击左键可以去掉上一次交互点，当完成交互时，可以按下p键("P" or "p")进行分割，交互结果在显示的同时将保存在原图像的同目录下。
 3. 按下o键("O" or "o"))，选择一张新的照片进行分割。
 
-### [test_iter.py](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/blob/master/InteractiveImageSegmentation/DeepInteractiveSegmentation/test_iter.py)
+### [test_iter.py](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/blob/master/InteractiveImageSegmentation/DeepInteractiveSegmentation/G99AIS/test_iter.py)
 
 迭代分割：打一个点分割一次，上一次的结果将会输入到网络中。
 
