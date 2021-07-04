@@ -34,8 +34,8 @@
 * [源Github - https://github.com/scaelles/DEXTR-PyTorch/](https://github.com/scaelles/DEXTR-PyTorch/)
 * [Paper PDF - https://arxiv.org/pdf/1711.09081](https://arxiv.org/pdf/1711.09081)
 * 有提供模型文件
-* [代码打包下载]()
-* [跑通过程记录]()
+* [代码打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/dextr)
+* [README](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/tree/master/InteractiveImageSegmentation/DEXTR)
 
 🔶 **Annotating object instances with a polygon-RNN**
 * [项目主页 - http://www.cs.toronto.edu/polyrnn/](http://www.cs.toronto.edu/polyrnn/)

@@ -33,6 +33,8 @@ MinGW-W64 GCC-5.4.0，[下载地址](https://sourceforge.net/projects/mingw-w64/
 
 | 网络 | 来源/源Github库 | 本库中地址 | 打包下载地址 | 相关描述 |
 | :-----: | :-----: | :-----: | :-----: | :-----: |
+| RSIS | [imatge-upc/rsis](https://github.com/imatge-upc/rsis) | [RSIS](./ImageInstanceSegmentation/RSIS) | - | [打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/rsis) |
+| DEXTR | [scaelles/DEXTR-PyTorch](https://github.com/scaelles/DEXTR-PyTorch) | [DEXTR](./InteractiveImageSegmentation/DEXTR) | [打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/dextr) |  |
 
 待更新......
 
