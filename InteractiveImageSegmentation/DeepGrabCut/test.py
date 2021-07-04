@@ -92,19 +92,13 @@ while True:
             wait_cv_window("out")
             
             # init
-            click_times = 0
             show_image = image.copy()
-            cv.imshow("image", show_image[:, :, ::-1])
-            extreme_points = []
     elif key == 111 or key == 79: # "o" or "O"
         # open a new image to segment
         image_path = get_open_file_path()
         image = np.array(Image.open(image_path))
         
         # init
-        click_times = 0
         show_image = image.copy()
-        cv.imshow("image", show_image[:, :, ::-1])
-        extreme_points = []
 
 root.destroy()

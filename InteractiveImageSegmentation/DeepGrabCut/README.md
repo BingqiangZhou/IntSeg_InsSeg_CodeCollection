@@ -20,11 +20,11 @@ conda install matplotlib opencv-contrib-python pillow
 
 以`deepgc_pascal_epoch-99.pth`为例，下载后放到`DeepGrabCut/models`文件夹中。
 
-### [net.py](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/blob/master/InteractiveImageSegmentation/DeepGrabCut/net.py)
+### [net.py](./net.py)
 
 `net.py`主要提取[源Github库](https://github.com/jfzhang95/DeepGrabCut-PyTorch)中[demo.py](https://github.com/jfzhang95/DeepGrabCut-PyTorch/blob/master/demo.py)文件中的内容，并将其封装起来。
 
-### [test.py](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/blob/master/InteractiveImageSegmentation/DeepGrabCut/test.py)
+### [test.py](./test.py)
 
 交互分割单张图像，通过OpenCV显示源图像，进行交互，显示分割结果，具体操作有：
 
