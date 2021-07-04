@@ -34,7 +34,7 @@
 * [Paper PDF - https://arxiv.org/pdf/1711.09081](https://arxiv.org/pdf/1707.00243)
 * 有提供模型文件
 * [代码打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/deepgrabcut)
-* [README](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/tree/master/InteractiveImageSegmentation/DeepGrabCut)
+* [实现交互测试](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/tree/master/InteractiveImageSegmentation/DeepGrabCut)
 
 ✅ **Deep extreme cut: From extreme points to object segmentation**
 * [项目主页 - https://cvlsegmentation.github.io/dextr/](https://cvlsegmentation.github.io/dextr/)
@@ -42,7 +42,7 @@
 * [Paper PDF - https://arxiv.org/pdf/1711.09081](https://arxiv.org/pdf/1711.09081)
 * 有提供模型文件
 * [代码打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/dextr)
-* [README](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/tree/master/InteractiveImageSegmentation/DEXTR)
+* [实现交互测试](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/tree/master/InteractiveImageSegmentation/DEXTR)
 
 🔶 **Annotating object instances with a polygon-RNN**
 * [项目主页 - http://www.cs.toronto.edu/polyrnn/](http://www.cs.toronto.edu/polyrnn/)
@@ -116,9 +116,12 @@
 * [修改版Github - https://github.com/jpconnel/fbrs-segmentation](https://github.com/jpconnel/fbrs-segmentation)
 * [Paper PDF - https://openaccess.thecvf.com/content_CVPR_2020/papers/...pdf](https://openaccess.thecvf.com/content_CVPR_2020/papers/Sofiiuk_F-BRS_Rethinking_Backpropagating_Refinement_for_Interactive_Segmentation_CVPR_2020_paper.pdf)
 
-**Getting to 99% accuracy in interactive segmentation**
+✅ **Getting to 99% accuracy in interactive segmentation**
 * [源Github - https://github.com/MarcoForte/DeepInteractiveSegmentation](https://github.com/MarcoForte/DeepInteractiveSegmentation)
 * [Paper PDF - https://arxiv.org/pdf/2003.07932](https://arxiv.org/pdf/2003.07932)
+* 有提供模型文件
+* [代码打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/g99ais)
+* [实现交互测试](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/tree/master/InteractiveImageSegmentation/G99AIS)
 
 **Interactive Object Segmentation with Inside-Outside Guidance**
 * [源Github - https://github.com/shiyinzhang/Inside-Outside-Guidance](https://github.com/shiyinzhang/Inside-Outside-Guidance)

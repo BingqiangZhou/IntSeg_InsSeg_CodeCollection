@@ -41,6 +41,7 @@ MinGW-W64 GCC-5.4.0，[下载地址](https://sourceforge.net/projects/mingw-w64/
 | :-----: | :-----: | :-----: | :-----: | :-----: |
 | DeepGrabCut | [jfzhang95/DeepGrabCut](https://github.com/jfzhang95/DeepGrabCut-PyTorch) | [DeepGrabCut](./InteractiveImageSegmentation/DeepGrabCut) | - | [打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/deepgrabcut) |
 | DEXTR | [scaelles/DEXTR](https://github.com/scaelles/DEXTR-PyTorch) | [DEXTR](./InteractiveImageSegmentation/DEXTR) | - | [打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/dextr) |
+| G99AIS | [MarcoForte/DeepInteractiveSegmentation](https://github.com/MarcoForte/DeepInteractiveSegmentation) | [DEXTR](./InteractiveImageSegmentation/G99AIS) | - | [打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/g99ais) |
 
 待更新......
 
