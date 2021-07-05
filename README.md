@@ -1,4 +1,4 @@
-# 交互式图像分割、图像实例分割代码合集（持续更新中...）
+# 交互式图像分割、图像实例分割代码合集
 
 这里记录一下跑通的一些交互式图像分割、图像实例分割的代码。
 
@@ -31,8 +31,8 @@
 | DEXTR | [scaelles/DEXTR](https://github.com/scaelles/DEXTR-PyTorch) | [DEXTR](./InteractiveImageSegmentation/DEXTR) | - | [打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/dextr) |
 | G99AIS | [MarcoForte/DeepInteractiveSegmentation](https://github.com/MarcoForte/DeepInteractiveSegmentation) | [G99AIS](./InteractiveImageSegmentation/G99AIS) | - | [打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/g99ais) |
 | IIS-LD | [intel-isl/Intseg](https://github.com/intel-isl/Intseg) | [IIS-LD](./InteractiveImageSegmentation/IIS-LD) | Tensorflow 1.x | [打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/iisld) |
-| FCTSFN | [cyh4/FCTSFN](https://github.com/cyh4/FCTSFN) | [FCTSFN](./InteractiveImageSegmentation/FCTSFN) | Caffe(通过OpenCV dnn实现推理预测) | [打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/fctsfn) |
-| BRS | [wdjang/BRS](https://github.com/wdjang/BRS-Interactive_segmentation) | [BRS](./InteractiveImageSegmentation/BRS) | Caffe(通过OpenCV dnn实现推理预测) | [打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/brs) |
+| FCTSFN | [cyh4/FCTSFN](https://github.com/cyh4/FCTSFN) | [FCTSFN](./InteractiveImageSegmentation/FCTSFN) | Caffe</br>(通过OpenCV dnn</br>实现推理预测) | [打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/fctsfn) |
+| BRS | [wdjang/BRS](https://github.com/wdjang/BRS-Interactive_segmentation) | [BRS](./InteractiveImageSegmentation/BRS) | Caffe</br>(通过OpenCV dnn</br>实现推理预测) | [打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/brs) |
 
 
 #### 2.2.2 随机采样
