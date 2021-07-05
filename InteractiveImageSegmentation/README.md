@@ -17,11 +17,13 @@
 
 [2016](#2016), [2017](#2017), [2018](#2018), [2019](#2019), [2020](#2020), [2021](#2021)
 
+
 ### 2016
 
 ✖️ **Deep interactive object selection**
 * [Paper PDF - https://arxiv.org/pdf/1603.04042](https://arxiv.org/pdf/1603.04042)
 * 没有找到开源代码
+
 
 ### 2017
 
@@ -48,6 +50,7 @@
 * [项目主页 - http://www.cs.toronto.edu/polyrnn/](http://www.cs.toronto.edu/polyrnn/)
 * [Paper PDF - https://arxiv.org/pdf/1704.05548](https://arxiv.org/pdf/1704.05548)
 * 项目已经改进更新为[polygon-RNN++](#polyrnn-pp)
+
 
 ### 2018
 
@@ -87,9 +90,12 @@
 
 ### 2019
 
-✅ **Interactive image segmentation via backpropagating refinement scheme**
+✳️ **Interactive image segmentation via backpropagating refinement scheme**
 * [源Github - https://github.com/wdjang/BRS-Interactive_segmentation](https://github.com/wdjang/BRS-Interactive_segmentation)
 * [Paper PDF - https://openaccess.thecvf.com/content_CVPR_2019/papers/...pdf](https://openaccess.thecvf.com/content_CVPR_2019/papers/Jang_Interactive_Image_Segmentation_via_Backpropagating_Refinement_Scheme_CVPR_2019_paper.pdf)
+* 有提供模型文件（caffe）
+* [代码打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/brs)
+* [实现交互测试](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/tree/master/InteractiveImageSegmentation/BRS)
 
 ✖️ **Interactive full image segmentation by considering all regions jointly**
 * [Paper PDF - https://openaccess.thecvf.com/content_CVPR_2019/papers/...pdf](https://openaccess.thecvf.com/content_CVPR_2019/papers/Agustsson_Interactive_Full_Image_Segmentation_by_Considering_All_Regions_Jointly_CVPR_2019_paper.pdf)
@@ -110,16 +116,16 @@
 
 ### 2020
 
-**Interactive image segmentation with first click attention**
+🔶 **Interactive image segmentation with first click attention**
 * [项目主页 - https://www.lin-zheng.com/fclick/](https://www.lin-zheng.com/fclick/)
 * [源Github - https://github.com/frazerlin/fcanet](https://github.com/frazerlin/fcanet)
 * [Paper PDF - https://openaccess.thecvf.com/content_CVPR_2019/papers/...pdf](https://openaccess.thecvf.com/content_CVPR_2020/papers/Lin_Interactive_Image_Segmentation_With_First_Click_Attention_CVPR_2020_paper.pdf)
 
-**DISIR: Deep image segmentation with interactive refinement**
+🔶 **DISIR: Deep image segmentation with interactive refinement**
 * [源Github - https://github.com/delair-ai/DISIR](https://github.com/delair-ai/DISIR)
 * [Paper PDF - https://arxiv.org/pdf/2003.14200](https://arxiv.org/pdf/2003.14200)
 
-**F-BRS: Rethinking backpropagating refinement for interactive segmentation**
+🔶 **F-BRS: Rethinking backpropagating refinement for interactive segmentation**
 * [官方Github - https://github.com/saic-vul/fbrs_interactive_segmentation](https://github.com/saic-vul/fbrs_interactive_segmentation)
 * [修改版Github - https://github.com/jpconnel/fbrs-segmentation](https://github.com/jpconnel/fbrs-segmentation)
 * [Paper PDF - https://openaccess.thecvf.com/content_CVPR_2020/papers/...pdf](https://openaccess.thecvf.com/content_CVPR_2020/papers/Sofiiuk_F-BRS_Rethinking_Backpropagating_Refinement_for_Interactive_Segmentation_CVPR_2020_paper.pdf)
@@ -131,12 +137,12 @@
 * [代码打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/g99ais)
 * [实现交互测试](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/tree/master/InteractiveImageSegmentation/G99AIS)
 
-**Interactive Object Segmentation with Inside-Outside Guidance**
+🔶 **Interactive Object Segmentation with Inside-Outside Guidance**
 * [源Github - https://github.com/shiyinzhang/Inside-Outside-Guidance](https://github.com/shiyinzhang/Inside-Outside-Guidance)
 * [Paper PDF - https://openaccess.thecvf.com/content_CVPR_2020/papers/...pdf](https://openaccess.thecvf.com/content_CVPR_2020/papers/Zhang_Interactive_Object_Segmentation_With_Inside-Outside_Guidance_CVPR_2020_paper.pdf)
 
 ### 2021
 
-**Reviving Iterative Training with Mask Guidance for Interactive Segmentation**
+🔶 **Reviving Iterative Training with Mask Guidance for Interactive Segmentation**
 * [源Github - https://github.com/saic-vul/ritm_interactive_segmentation](https://github.com/saic-vul/ritm_interactive_segmentation)
 * [Paper PDF - https://arxiv.org/pdf/2102.06583](https://arxiv.org/pdf/2102.06583)

@@ -1,6 +1,6 @@
-# FCTSFN
+# BRS
 
-在作者提供的代码([Github地址](https://github.com/cyh4/FCTSFN))的基础上，实现推理预测。
+在作者提供的代码([Github地址](https://github.com/wdjang/BRS-Interactive_segmentation))的基础上，实现推理预测。
 
 ## 创建环境以及安装相关Python包
 
@@ -11,11 +11,11 @@ OpenCV + Numpy + Pillow
 注：这里是通过OpenCV加载Caffe模型实现推理预测，如果需要使用GPU加速的话，需要自己编译OpenCV，相关的文档见[Docs](../../Docs)。
 
 ## 修改及编写代码
-### [代码打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/fctsfn)
+### [代码打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/brs)
 
 ### 下载模型文件
 
-**可能需要科学上网** [源Github库](https://github.com/cyh4/FCTSFN)下提供了的模型的[下载地址](https://drive.google.com/open?id=1vA1g5O2NzOccT6vbgz0LwiflbcP1I86n)，我将它们放在了本仓库的[Releaes](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/fctsfn)中，提供下载。
+**可能需要科学上网** [源Github库](https://github.com/wdjang/BRS-Interactive_segmentation)下提供了的模型的[下载地址](https://www.dropbox.com/s/o5i2autfzfos1tk/BRS_DenseNet.caffemodel?dl=0)，我将它们放在了本仓库的[Releaes](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/brs)中，提供下载。
 
 ### [net.py](./net.py)
 
