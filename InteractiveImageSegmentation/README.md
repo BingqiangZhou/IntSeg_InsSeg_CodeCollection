@@ -51,19 +51,25 @@
 
 ### 2018
 
-**Iteratively trained interactive segmentation**
+❌ **Iteratively trained interactive segmentation**
 * [源Github - https://github.com/sabarim/itis](https://github.com/sabarim/itis)
 * [Paper PDF - https://arxiv.org/pdf/1805.04398](https://arxiv.org/pdf/1805.04398)
+* 把加载数据集数据部分写进了计算图，无法将预测分割部分摘取出来，战略性放弃
 
-**SeedNet: Automatic seed generation with deep reinforcement learning for robust interactive segmentation**
+⏹ **SeedNet: Automatic seed generation with deep reinforcement learning for robust interactive segmentation**
 * [源Github - https://github.com/kelawaad/SeedNet](https://github.com/kelawaad/SeedNet)
 * [Paper PDF - https://openaccess.thecvf.com/content_cvpr_2018/papers/...pdf](https://openaccess.thecvf.com/content_cvpr_2018/papers/Song_SeedNet_Automatic_Seed_CVPR_2018_paper.pdf)
+* 没有提供模型文件
 
-**Interactive image segmentation with latent diversity**
+✅ **Interactive image segmentation with latent diversity**
 * [源Github - https://github.com/intel-isl/Intseg](https://github.com/intel-isl/Intseg)
 * [Paper PDF - https://openaccess.thecvf.com/content_cvpr_2018/papers/...pdf](https://openaccess.thecvf.com/content_cvpr_2018/papers/Li_Interactive_Image_Segmentation_CVPR_2018_paper.pdf)
+* 有提供模型文件
+* [代码打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/issld)
+* [实现交互测试](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/tree/master/InteractiveImageSegmentation/ISS-LD)
 
-**A fully convolutional two-stream fusion network for interactive image segmentation**
+
+✅ **A fully convolutional two-stream fusion network for interactive image segmentation**
 * [源Github - https://github.com/cyh4/FCTSFN](https://github.com/cyh4/FCTSFN)
 * [Paper PDF - https://arxiv.org/pdf/1807.02480](https://arxiv.org/pdf/1807.02480)
 
@@ -79,7 +85,7 @@
 
 ### 2019
 
-**Interactive image segmentation via backpropagating refinement scheme**
+✅ **Interactive image segmentation via backpropagating refinement scheme**
 * [源Github - https://github.com/wdjang/BRS-Interactive_segmentation](https://github.com/wdjang/BRS-Interactive_segmentation)
 * [Paper PDF - https://openaccess.thecvf.com/content_CVPR_2019/papers/...pdf](https://openaccess.thecvf.com/content_CVPR_2019/papers/Jang_Interactive_Image_Segmentation_via_Backpropagating_Refinement_Scheme_CVPR_2019_paper.pdf)
 
