@@ -42,7 +42,7 @@ def combine_result_and_interactives(result, interactives_image, alpha=0.6):
 
 
 def click(event, x, y, flags, param):
-    global point_list, interactives_image, image, last_result
+    global point_list, interactives_image, image, last_result, show_image
     num_points = len(point_list)
     if flags == cv.EVENT_FLAG_CTRLKEY and event == cv.EVENT_LBUTTONUP: # cancel last click: press 'ctrl' key and left button
         if len(point_list) > 0:
