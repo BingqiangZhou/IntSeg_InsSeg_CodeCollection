@@ -1,4 +1,4 @@
-# DEXTR
+# G99AIS
 
 在作者提供的代码([Github地址](https://github.com/MarcoForte/DeepInteractiveSegmentation))的基础上，实现推理预测。
 
@@ -17,8 +17,6 @@ conda install matplotlib opencv pillow scikit-learn scikit-image guided_filter_p
 ### 下载模型文件
 
 **可能需要科学上网** [源Github库](https://github.com/MarcoForte/DeepInteractiveSegmentation)下提供了的模型的[下载地址](https://drive.google.com/file/d/1nJMTXSlprm5FQaQA5gfyU8CbSEX8ghzJ/view?usp=sharing)，我将它们放在了本仓库的[Releaes](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/g99ais)中，提供下载。
-
-以`dextr_pascal-sbd.pth`为例，下载后放到`DEXTR/models`文件夹中。
 
 ### [net.py](./net.py)
 

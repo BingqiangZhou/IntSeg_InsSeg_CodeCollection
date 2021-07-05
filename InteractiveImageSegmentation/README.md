@@ -4,7 +4,7 @@
 
 ## 代码状态
 
-* ✅  通过pytorch实现推理过程
+* ✅  通过pytorch或者tensorflow实现推理过程
 * ✳️  通过OpenCV DNN模块读取模型以及其他方式（非pytorch）实现推理过程
 * ⏹  有代码，没有模型，没有做
 * ✖️  没有找到开源代码
@@ -68,10 +68,12 @@
 * [代码打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/issld)
 * [实现交互测试](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/tree/master/InteractiveImageSegmentation/ISS-LD)
 
-
-✅ **A fully convolutional two-stream fusion network for interactive image segmentation**
+✳️ **A fully convolutional two-stream fusion network for interactive image segmentation**
 * [源Github - https://github.com/cyh4/FCTSFN](https://github.com/cyh4/FCTSFN)
 * [Paper PDF - https://arxiv.org/pdf/1807.02480](https://arxiv.org/pdf/1807.02480)
+* 有提供模型文件（caffe）
+* [代码打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/fctsfn)
+* [实现交互测试](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/tree/master/InteractiveImageSegmentation/FCTSFN)
 
 🔶 **Efficient interactive annotation of segmentation datasets with polygon-RNN++** <span id="polyrnn-pp"></span>
 * [项目主页 - http://www.cs.toronto.edu/polyrnn/](http://www.cs.toronto.edu/polyrnn/)

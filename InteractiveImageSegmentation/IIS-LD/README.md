@@ -1,4 +1,4 @@
-# DEXTR
+# IIS-LD
 
 在作者提供的代码([Github地址](https://github.com/intel-isl/Intseg))的基础上，实现推理预测。
 
@@ -16,8 +16,6 @@ Tensorflow (>=1.3) + OpenCV + Scipy + Numpy
 ### 下载模型文件
 
 **可能需要科学上网** [源Github库](https://github.com/intel-isl/Intseg)下提供了的模型的[下载地址](https://drive.google.com/open?id=1u96zu0VyNpy-1VL90EbriN74hGaBBK08)，我将它们放在了本仓库的[Releaes](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/iisld)中，提供下载。
-
-以`dextr_pascal-sbd.pth`为例，下载后放到`DEXTR/models`文件夹中。
 
 ### [net.py](./net.py)
 

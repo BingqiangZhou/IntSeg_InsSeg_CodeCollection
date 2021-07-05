@@ -1,0 +1,25 @@
+train_net: "./models/train_fctsfn.prototxt"
+#test_net: "./models/val_fctsfn.prototxt"
+#test_iter: 1200
+# make test net, but don't invoke it from the solver itself
+test_interval: 999999999
+display: 100
+average_loss: 20
+lr_policy: "multistep"
+#lr_policy: "fixed"
+# lr for unnormalized softmax
+base_lr: 1e-8
+# high momentum
+gamma: 0.1
+momentum: 0.99
+# no gradient accumulation
+iter_size: 1
+max_iter: 2000000
+weight_decay: 0.0005
+snapshot: 1000
+snapshot_prefix: "./snapshots/snapshot_fctsfn/train"
+test_initialization: false
+stepvalue: 10000
+stepvalue: 20000
+solver_mode: GPU
+type: "Nesterov"
