@@ -125,10 +125,13 @@
 * [源Github - https://github.com/delair-ai/DISIR](https://github.com/delair-ai/DISIR)
 * [Paper PDF - https://arxiv.org/pdf/2003.14200](https://arxiv.org/pdf/2003.14200)
 
-🔶 **F-BRS: Rethinking backpropagating refinement for interactive segmentation**
+✅ **F-BRS: Rethinking backpropagating refinement for interactive segmentation**
 * [官方Github - https://github.com/saic-vul/fbrs_interactive_segmentation](https://github.com/saic-vul/fbrs_interactive_segmentation)
 * [修改版Github - https://github.com/jpconnel/fbrs-segmentation](https://github.com/jpconnel/fbrs-segmentation)
 * [Paper PDF - https://openaccess.thecvf.com/content_CVPR_2020/papers/...pdf](https://openaccess.thecvf.com/content_CVPR_2020/papers/Sofiiuk_F-BRS_Rethinking_Backpropagating_Refinement_for_Interactive_Segmentation_CVPR_2020_paper.pdf)
+* 有提供模型文件
+* [代码打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/fbrs)
+* [实现交互测试](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/tree/master/InteractiveImageSegmentation/FBRS)
 
 ✅ **Getting to 99% accuracy in interactive segmentation**
 * [源Github - https://github.com/MarcoForte/DeepInteractiveSegmentation](https://github.com/MarcoForte/DeepInteractiveSegmentation)

@@ -27,12 +27,13 @@
 
 | 网络 | 来源/源Github库 | 本库中地址 | 相关描述 | |
 | :-----: | :-----: | :-----: | :-----: | :-----: |
-| DeepGrabCut | [jfzhang95/DeepGrabCut](https://github.com/jfzhang95/DeepGrabCut-PyTorch) | [DeepGrabCut](./InteractiveImageSegmentation/DeepGrabCut) | - | [打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/deepgrabcut) |
-| DEXTR | [scaelles/DEXTR](https://github.com/scaelles/DEXTR-PyTorch) | [DEXTR](./InteractiveImageSegmentation/DEXTR) | - | [打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/dextr) |
+| DeepGrabCut | [jfzhang95/DeepGrabCut-PyTorch](https://github.com/jfzhang95/DeepGrabCut-PyTorch) | [DeepGrabCut](./InteractiveImageSegmentation/DeepGrabCut) | - | [打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/deepgrabcut) |
+| DEXTR | [scaelles/DEXTR-PyTorch](https://github.com/scaelles/DEXTR-PyTorch) | [DEXTR](./InteractiveImageSegmentation/DEXTR) | - | [打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/dextr) |
 | G99AIS | [MarcoForte/DeepInteractiveSegmentation](https://github.com/MarcoForte/DeepInteractiveSegmentation) | [G99AIS](./InteractiveImageSegmentation/G99AIS) | - | [打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/g99ais) |
 | IIS-LD | [intel-isl/Intseg](https://github.com/intel-isl/Intseg) | [IIS-LD](./InteractiveImageSegmentation/IIS-LD) | Tensorflow 1.x | [打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/iisld) |
 | FCTSFN | [cyh4/FCTSFN](https://github.com/cyh4/FCTSFN) | [FCTSFN](./InteractiveImageSegmentation/FCTSFN) | Caffe</br>(通过OpenCV dnn</br>实现推理预测) | [打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/fctsfn) |
-| BRS | [wdjang/BRS](https://github.com/wdjang/BRS-Interactive_segmentation) | [BRS](./InteractiveImageSegmentation/BRS) | Caffe</br>(通过OpenCV dnn</br>实现推理预测) | [打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/brs) |
+| BRS | [wdjang/BRS-Interactive_segmentation](https://github.com/wdjang/BRS-Interactive_segmentation) | [BRS](./InteractiveImageSegmentation/BRS) | Caffe</br>(通过OpenCV dnn</br>实现推理预测) | [打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/brs) |
+| FBRS | [saic-vul/fbrs_interactive_segmentation](https://github.com/saic-vul/fbrs_interactive_segmentation) | [FBRS](./InteractiveImageSegmentation/FBRS) | - | [打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/fbrs) |
 
 
 #### 2.2.2 随机采样
