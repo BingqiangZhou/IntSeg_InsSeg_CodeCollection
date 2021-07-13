@@ -3,8 +3,11 @@ import scipy.io as sio
 import numpy as np
 from PIL import Image
 import cv2 as cv
+from torch._C import dtype
 from tqdm import tqdm
 import pandas as pd
+import torch
+import torch.nn.functional as F
 import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans, SpectralClustering # https://scikit-learn.org/stable/modules/clustering.html#
 from scipy.optimize import linear_sum_assignment
@@ -30,8 +33,8 @@ def f1_score(binary_predict, binary_target,  epsilon=1e-6):
 #   https://blog.csdn.net/qq_25602729/article/details/108377648
 #   https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.linear_sum_assignment.html
 def max_iou_assignment(iou_matrix):
-    row_index, col_index = linear_sum_assignment(-iou_matrix)
-    return row_index, col_index
+    indx_1, indx_2 = linear_sum_assignment(-iou_matrix)
+    return indx_1, indx_2
 
 # 获取图像名列表
 voc_root_dir = r'E:\Datasets\iis_datasets\VOCdevkit\VOC2012'
@@ -77,20 +80,37 @@ for k, image_name in enumerate(tqdm(file_names, desc="RPEIG")):
     # 根据图像名获取特征图
     data = sio.loadmat(os.path.join(fea_map_dir, image_name + '.mat'))
     fea_map = data['feaMap']
-
-    # 特征图聚类得到预测的label，簇的数量由真实的label中对象数确定
     fea_map_h,  fea_map_w, fea_map_channel = fea_map.shape
-    fea_map_reshaped = np.reshape(fea_map, (fea_map_h * fea_map_w, fea_map_channel))
-    # kmeans = KMeans(4).fit(fea_map_reshaped)
-    # labels = kmeans.labels_.reshape(h, w)
-    sc = SpectralClustering(num_objects).fit(fea_map_reshaped)
-    predict_labels = sc.labels_.reshape(fea_map_h, fea_map_w)
-    # print(predict_labels.shape, np.unique(predict_labels))
-    # plt.imshow(predict_labels)
-    # plt.show()
 
-    # 上采样到原图大小
-    predict_labels = cv.resize(predict_labels.astype(np.uint8), (image_w, image_h), interpolation=cv.INTER_NEAREST)
+    # # 特征图聚类得到预测的label，簇的数量由真实的label中对象数确定
+    
+    # 1. 先聚类再上采样
+    # fea_map_reshaped = np.reshape(fea_map, (fea_map_h * fea_map_w, fea_map_channel))
+    
+    # # kmeans = KMeans(4).fit(fea_map_reshaped)
+    # # labels = kmeans.labels_.reshape(h, w)
+    # sc = SpectralClustering(num_objects).fit(fea_map_reshaped)
+    # predict_labels = sc.labels_.reshape(fea_map_h, fea_map_w)
+    # # print(predict_labels.shape, np.unique(predict_labels))
+    # # plt.imshow(predict_labels)
+    # # plt.show()
+
+    # # 上采样到原图大小
+    # predict_labels = cv.resize(predict_labels.astype(np.uint8), (image_w, image_h), interpolation=cv.INTER_NEAREST)
+    # # print(predict_labels.shape, np.unique(predict_labels))
+    # # plt.imshow(predict_labels)
+    # # plt.show()
+
+    # 2. 先上采样再聚类
+    fea_map_nchw = np.transpose(fea_map, (2, 0, 1))[None, :, :, :] # (h/4, h/w, c) -> (1, c, h/4, w/4)
+    fea_map_upsample = F.interpolate(torch.from_numpy(fea_map_nchw), (image_h, image_w)).numpy()
+    fea_map_upsample = np.transpose(fea_map_upsample[0], (1, 2, 0)) # (1, c, h, w) -> (h, w, c)
+    fea_map_reshaped = np.reshape(fea_map_upsample, (image_h * image_w, fea_map_channel))
+
+    kmeans = KMeans(num_objects).fit(fea_map_reshaped)
+    predict_labels = kmeans.labels_.reshape(image_h, image_w)
+    # sc = SpectralClustering(num_objects).fit(fea_map_reshaped)
+    # predict_labels = sc.labels_.reshape(image_h, image_w)
     # print(predict_labels.shape, np.unique(predict_labels))
     # plt.imshow(predict_labels)
     # plt.show()
