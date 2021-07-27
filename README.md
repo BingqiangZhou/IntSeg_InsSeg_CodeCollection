@@ -34,6 +34,7 @@
 | FCTSFN | [cyh4/FCTSFN](https://github.com/cyh4/FCTSFN) | [FCTSFN](./InteractiveImageSegmentation/FCTSFN) | Caffe</br>(通过OpenCV dnn</br>实现推理预测) | [打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/fctsfn) |
 | BRS | [wdjang/BRS-Interactive_segmentation](https://github.com/wdjang/BRS-Interactive_segmentation) | [BRS](./InteractiveImageSegmentation/BRS) | Caffe</br>(通过OpenCV dnn</br>实现推理预测) | [打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/brs) |
 | FBRS | [saic-vul/fbrs_interactive_segmentation](https://github.com/saic-vul/fbrs_interactive_segmentation) | [FBRS](./InteractiveImageSegmentation/FBRS) | - | [打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/fbrs) |
+| FCANet | [frazerlin/fcanet](https://github.com/frazerlin/fcanet) | [FBRS](./InteractiveImageSegmentation/FCANet) | - | [打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/fcanet) |
 
 
 #### 2.2.2 随机采样

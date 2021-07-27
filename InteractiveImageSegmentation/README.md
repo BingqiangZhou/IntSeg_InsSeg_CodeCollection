@@ -120,6 +120,9 @@
 * [项目主页 - https://www.lin-zheng.com/fclick/](https://www.lin-zheng.com/fclick/)
 * [源Github - https://github.com/frazerlin/fcanet](https://github.com/frazerlin/fcanet)
 * [Paper PDF - https://openaccess.thecvf.com/content_CVPR_2019/papers/...pdf](https://openaccess.thecvf.com/content_CVPR_2020/papers/Lin_Interactive_Image_Segmentation_With_First_Click_Attention_CVPR_2020_paper.pdf)
+* 有提供模型文件
+* [代码打包下载](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/releases/tag/fcanet)
+* [实现交互测试](https://github.com/BingqiangZhou/IntSeg_InsSeg_CodeCollection/tree/master/InteractiveImageSegmentation/FCANet)
 
 🔶 **DISIR: Deep image segmentation with interactive refinement**
 * [源Github - https://github.com/delair-ai/DISIR](https://github.com/delair-ai/DISIR)
