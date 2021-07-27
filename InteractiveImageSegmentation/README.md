@@ -116,7 +116,7 @@
 
 ### 2020
 
-🔶 **Interactive image segmentation with first click attention**
+✅ **Interactive image segmentation with first click attention**
 * [项目主页 - https://www.lin-zheng.com/fclick/](https://www.lin-zheng.com/fclick/)
 * [源Github - https://github.com/frazerlin/fcanet](https://github.com/frazerlin/fcanet)
 * [Paper PDF - https://openaccess.thecvf.com/content_CVPR_2019/papers/...pdf](https://openaccess.thecvf.com/content_CVPR_2020/papers/Lin_Interactive_Image_Segmentation_With_First_Click_Attention_CVPR_2020_paper.pdf)
