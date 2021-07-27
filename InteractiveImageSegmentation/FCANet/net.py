@@ -3,7 +3,7 @@ import cv2 as cv
 import time
 from PIL import Image
 import numpy as np
-from model.fcanet import FCANet
+from model.fcanet import FCANet as Net
 from core import Resize, CatPointMask, ToTensor
 from scipy.ndimage.morphology import distance_transform_edt
 
@@ -13,7 +13,7 @@ class FCANet():
                     pretrained_file='./pretrained_model/fcanet-resnet.pth', record_time=True):
         print('Backbone is {}'.format(backbone))
         self.record_time = record_time
-        self.model = FCANet(backbone=backbone)
+        self.model = Net(backbone=backbone)
         device_str = f"cuda:{device}" if device >= 0 else "cpu"
         self.device = torch.device(device_str)
         self.model = self.model.to(self.device)
